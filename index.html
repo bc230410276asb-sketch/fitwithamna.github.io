@@ -763,36 +763,54 @@
     </div>
   </section>
 
-  <!-- FITNESS BLOGS -->
-  <section id="blogs">
-    <div class="blogs-header reveal">
-      <div>
-        <p class="section-tag">Fitness Blog</p>
-        <h2 class="section-h2">Latest Articles</h2>
-      </div>
+ <!-- FITNESS BLOGS -->
+<section id="blogs">
+  <div class="blogs-header reveal">
+    <div>
+      <p class="section-tag">Fitness Blog</p>
+      <h2 class="section-h2">Latest Articles</h2>
     </div>
-    <div class="blogs-grid">
-      <!-- Replace # with your real blog URLs -->
-      <a href="/blogs/" class="blog-card reveal">
-        <p class="blog-niche">Strength Training</p>
-        <h3 class="blog-title">The Science of Progressive Overload Every Lifter Should Know</h3>
-        <p class="blog-excerpt">Why adding weight isn't the only way to progress — and the smarter principles that lead to lasting muscle and strength gains.</p>
+  </div>
+
+  <div class="blogs-grid">
+
+    <!-- JEKYLL DYNAMIC BLOG LOOP -->
+    {% for post in site.posts limit:3 %}
+
+      <a href="{{ post.url }}" class="blog-card reveal">
+
+        <!-- CATEGORY (you can improve later with real categories) -->
+        <p class="blog-niche">
+          Fitness
+        </p>
+
+        <!-- BLOG TITLE -->
+        <h3 class="blog-title">
+          {{ post.title }}
+        </h3>
+
+        <!-- BLOG EXCERPT (auto-generated or custom excerpt) -->
+        <p class="blog-excerpt">
+          {{ post.excerpt | strip_html | truncate: 120 }}
+        </p>
+
+        <!-- READ BUTTON -->
         <span class="blog-read">Read Article</span>
+
       </a>
-      <a href="#" class="blog-card reveal">
-        <p class="blog-niche">Nutrition</p>
-        <h3 class="blog-title">How Much Protein Do You Really Need? The Research-Backed Answer</h3>
-        <p class="blog-excerpt">Cutting through the noise on protein intake — what studies actually say, and how to apply it to your specific goal.</p>
-        <span class="blog-read">Read Article</span>
-      </a>
-      <a href="#" class="blog-card reveal">
-        <p class="blog-niche">Fat Loss</p>
-        <h3 class="blog-title">Lose Fat Without Losing Muscle: A Practical, Evidence-Based Guide</h3>
-        <p class="blog-excerpt">The strategic approach to cutting calories while preserving lean mass — for a result that actually lasts.</p>
-        <span class="blog-read">Read Article</span>
-      </a>
-    </div>
-  </section>
+
+    {% endfor %}
+
+  </div>
+
+  <!-- OPTIONAL: VIEW ALL BLOGS BUTTON -->
+  <div style="text-align:center; margin-top: 30px;">
+    <a href="/blog.html" class="view-all-btn">
+      View All Articles
+    </a>
+  </div>
+
+</section>
 
   <!-- OTHER NICHES -->
   <section id="other-niches">
