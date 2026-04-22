@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article style="max-width: 780px; margin: 0 auto; padding: 40px 20px; font-family: Georgia, serif;">
+  <h1 style="font-size: 2rem; margin-bottom: 10px;">{{ page.title }}</h1>
+  
+  <div style="color: #888; font-size: 0.9rem; margin-bottom: 30px;">
+    {{ page.date | date: "%B %d, %Y" }} &nbsp;•&nbsp; 
+    <strong style="color: #2e7d32;">Written by Amna Shahid</strong> &nbsp;•&nbsp;
+    {{ page.category }}
+  </div>
+
+  <div style="line-height: 1.8; font-size: 1.05rem; color: #222;">
+    {{ content }}
+  </div>
+
+  <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.9rem; color: #555;">
+    Written by <strong>Amna Shahid</strong> — SEO fitness & health content writer.
+    <br>
+    <a href="/blogs/" style="color: #2e7d32;">← Back to all posts</a>
+  </div>
+</article>
