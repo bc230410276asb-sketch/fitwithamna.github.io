@@ -1,9 +1,14 @@
 title: Fitwithamna
+description: "Fitness tips, workouts, weightloss, and healthy lifestyle guides by Amna Shahid"
 url: "https://fitwithamna.me"
 baseurl: ""
 permalink: /:title/
 theme: minima
 
+author:
+  name: "Amna Shahid"
+
 plugins:
   - jekyll-feed
-  
+  - jekyll-seo-tag
+  - jekyll-sitemap
