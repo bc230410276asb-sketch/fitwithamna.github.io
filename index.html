@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amna Shahid — Fitness Content Writer</title>
+  <meta name="description" content="Amna Shahid is a fitness content writer with 3+ years of SEO experience. Specialising in fitness, nutrition, workout, and health content.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #1a8652;
+      --green-dark: #146b42;
+      --green-light: #e8f5ee;
+      --black: #0f0f0f;
+      --white: #ffffff;
+      --off-white: #f9f9f7;
+      --muted: #6b6b6b;
+      --border: #e4e4e0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--white);
+      color: var(--black);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 5rem;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s;
+    }
+    nav.scrolled { border-color: var(--border); }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--black);
+    }
+    .nav-logo span { color: var(--green); }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--green); }
+
+    /* HERO */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 9rem 5rem 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    #hero::before {
+      content: 'fitwithamna';
+      position: absolute;
+      right: -1rem;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      font-family: 'Playfair Display', serif;
+      font-size: 9rem;
+      font-weight: 700;
+      color: var(--green-light);
+      pointer-events: none;
+      white-space: nowrap;
+      z-index: 0;
+    }
+    .hero-inner { position: relative; z-index: 1; max-width: 720px; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--green-light);
+      color: var(--green);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.45rem 1rem;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.1s forwards;
+    }
+    .hero-badge::before { content: '●'; font-size: 0.45rem; }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 5.5vw, 5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.25s forwards;
+    }
+    h1 em { font-style: italic; color: var(--green); }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 520px;
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.4s forwards;
+    }
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.55s forwards;
+    }
+    .btn-green {
+      background: var(--green);
+      color: var(--white);
+      padding: 0.9rem 2.2rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 2px solid var(--green);
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+    .btn-green:hover { background: var(--green-dark); border-color: var(--green-dark); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--black);
+      padding: 0.9rem 2.2rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 2px solid var(--border);
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+    .btn-outline:hover { border-color: var(--black); transform: translateY(-2px); }
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      opacity: 0;
+      animation: fadeUp 0.7s 0.7s forwards;
+    }
+    .hero-stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--green);
+      display: block;
+    }
+    .hero-stat-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* SECTION BASE */
+    section { padding: 6rem 5rem; }
+    .section-tag {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.75rem;
+    }
+    .section-h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+    }
+    .section-body {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.8;
+      max-width: 560px;
+    }
+
+    /* FEATURED */
+    #featured {
+      background: var(--black);
+      padding: 3rem 5rem;
+    }
+    .featured-inner {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .featured-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      white-space: nowrap;
+    }
+    .featured-divider {
+      width: 1px; height: 28px;
+      background: rgba(255,255,255,0.12);
+    }
+    .featured-logos { display: flex; gap: 3rem; align-items: center; flex-wrap: wrap; }
+    .featured-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+    }
+    .featured-logo:hover { color: var(--white); }
+
+    /* ABOUT */
+    #about {
+      background: var(--off-white);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7rem;
+      align-items: center;
+    }
+    .about-quote {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--green);
+      line-height: 1.65;
+      margin: 1.8rem 0;
+      padding-left: 1.5rem;
+      border-left: 3px solid var(--green);
+    }
+    .about-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+    .tag {
+      background: var(--green-light);
+      color: var(--green);
+      font-size: 0.74rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      padding: 0.4rem 0.9rem;
+    }
+    .about-credentials { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.1rem; }
+    .credential { display: flex; align-items: flex-start; gap: 1rem; }
+    .cred-icon {
+      width: 38px; height: 38px;
+      background: var(--green);
+      color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .cred-text strong { display: block; font-size: 0.85rem; font-weight: 500; margin-bottom: 0.15rem; }
+    .cred-text span { font-size: 0.78rem; color: var(--muted); }
+
+    /* NICHES */
+    #niches { background: var(--white); }
+    .niches-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      margin-top: 3rem;
+    }
+    .niche-card {
+      background: var(--white);
+      padding: 2.5rem 2rem;
+      transition: background 0.25s;
+    }
+    .niche-card:hover { background: var(--green-light); }
+    .niche-emoji { font-size: 2rem; display: block; margin-bottom: 1rem; }
+    .niche-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .niche-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.7; }
+
+    /* SERVICES */
+    #services { background: var(--green); }
+    #services .section-tag { color: rgba(255,255,255,0.55); }
+    #services .section-h2 { color: var(--white); }
+    #services .section-body { color: rgba(255,255,255,0.65); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .service-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      padding: 2.5rem;
+      transition: background 0.25s;
+    }
+    .service-card:hover { background: rgba(255,255,255,0.14); }
+    .service-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.12);
+      display: block;
+      margin-bottom: 1rem;
+      line-height: 1;
+    }
+    .service-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+    .service-desc { font-size: 0.85rem; color: rgba(255,255,255,0.65); line-height: 1.75; }
+    .service-list { list-style: none; margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.45rem; }
+    .service-list li {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .service-list li::before { content: '→'; color: rgba(255,255,255,0.3); font-size: 0.7rem; }
+
+    /* BLOGS */
+    #blogs { background: var(--off-white); }
+    .blogs-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 3rem;
+    }
+    .blogs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .blog-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      transition: transform 0.25s, box-shadow 0.25s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.06); }
+    .blog-niche {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.75rem;
+    }
+    .blog-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+    }
+    .blog-excerpt { font-size: 0.82rem; color: var(--muted); line-height: 1.7; }
+    .blog-read {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1.25rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+    .blog-read::after { content: '→'; }
+
+    /* OTHER NICHES */
+    #other-niches { background: var(--white); }
+    .other-blogs-list { margin-top: 2.5rem; }
+    .other-blog-item {
+      display: grid;
+      grid-template-columns: 40px 1fr auto;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+      transition: opacity 0.2s;
+    }
+    .other-blog-item:first-child { border-top: 1px solid var(--border); }
+    .other-blog-item:hover { opacity: 0.55; }
+    .other-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--green);
+    }
+    .other-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 400;
+    }
+    .other-arrow { font-size: 1.1rem; color: var(--muted); }
+
+    /* CONTACT */
+    #contact { background: var(--black); color: var(--white); }
+    #contact .section-tag { color: var(--green); }
+    #contact .section-h2 { color: var(--white); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      margin-top: 3rem;
+      align-items: start;
+    }
+    .contact-info p { font-size: 0.9rem; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 1.5rem; }
+    .contact-email {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 400;
+      transition: color 0.2s;
+      margin-bottom: 2rem;
+    }
+    .contact-email:hover { color: var(--green); }
+    .contact-email-icon {
+      width: 38px; height: 38px;
+      background: var(--green);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+    }
+    .avail-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(26,134,82,0.18);
+      color: #4ade80;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.45rem 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .avail-dot {
+      width: 6px; height: 6px;
+      background: #4ade80;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1}50%{opacity:0.35} }
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .contact-form input,
+    .contact-form textarea {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--white);
+      padding: 0.9rem 1.25rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 300;
+      outline: none;
+      resize: none;
+      width: 100%;
+      transition: border-color 0.2s;
+    }
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder { color: rgba(255,255,255,0.22); }
+    .contact-form input:focus,
+    .contact-form textarea:focus { border-color: var(--green); }
+    .btn-submit {
+      background: var(--green);
+      color: var(--white);
+      padding: 1rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-submit:hover { background: var(--green-dark); transform: translateY(-1px); }
+
+    /* FOOTER */
+    footer {
+      background: var(--black);
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding: 2.5rem 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .footer-logo span { color: var(--green); }
+    .social-icons { display: flex; gap: 0.75rem; align-items: center; }
+    .social-icon {
+      width: 40px; height: 40px;
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.95rem;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+    }
+    .social-icon:hover { border-color: var(--green); color: var(--white); background: var(--green); }
+    footer p { font-size: 0.72rem; color: rgba(255,255,255,0.18); }
+
+    /* REVEAL */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @keyframes fadeUp {
+      from { opacity:0; transform:translateY(20px); }
+      to   { opacity:1; transform:none; }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      nav { padding: 1.2rem 2rem; }
+      .nav-links { display: none; }
+      section { padding: 4rem 2rem; }
+      #hero { padding: 7rem 2rem 4rem; }
+      #hero::before { display: none; }
+      #about { grid-template-columns: 1fr; gap: 2.5rem; }
+      .niches-grid { grid-template-columns: 1fr 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .blogs-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      footer { flex-direction: column; text-align: center; padding: 2rem; }
+      #featured { padding: 2rem; }
+      .hero-stats { gap: 2rem; flex-wrap: wrap; }
+      .blogs-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Amna <span>Shahid</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#niches">Niches</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <span class="hero-badge">Available for Freelance &amp; Full-Time</span>
+      <h1>Fitness Content<br>That <em>Converts</em> &amp;<br>Truly <em>Connects.</em></h1>
+      <p class="hero-sub">
+        Hi, I'm Amna — a BS English &amp; Applied Linguistics graduate and SEO content writer with 3+ years of experience. I write fitness, nutrition, and health content because I've lived it. I lost weight through research, and now I help brands reach the people who need it most.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-green">Work With Me</a>
+        <a href="#blogs" class="btn-outline">Read My Work</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-num">3+</span>
+          <span class="hero-stat-label">Years Experience</span>
+        </div>
+        <div>
+          <span class="hero-stat-num">50+</span>
+          <span class="hero-stat-label">Articles Written</span>
+        </div>
+        <div>
+          <span class="hero-stat-num">SEO</span>
+          <span class="hero-stat-label">Optimised Always</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED ON -->
+  <div id="featured">
+    <div class="featured-inner">
+      <span class="featured-label">Featured on</span>
+      <div class="featured-divider"></div>
+      <div class="featured-logos">
+        <span class="featured-logo">Forbes</span>
+        <span class="featured-logo">Medium</span>
+        <span class="featured-logo">LinkedIn</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-left reveal">
+      <p class="section-tag">About Me</p>
+      <h2 class="section-h2">I don't just write<br>about fitness — I live it.</h2>
+      <blockquote class="about-quote">
+        "I lost weight through research and consistency. That experience taught me exactly what an audience needs to hear — and how to say it."
+      </blockquote>
+      <p class="section-body">
+        I'm Amna Shahid, a fitness content writer with a BS in English Applied Linguistics and 3+ years in SEO content writing. I craft articles that rank on Google and resonate with real people navigating their health journey. I understand both the science and the struggle — which is what makes my writing land.
+      </p>
+      <div class="about-tags">
+        <span class="tag">Fitness</span>
+        <span class="tag">Workout</span>
+        <span class="tag">Nutrition</span>
+        <span class="tag">Health &amp; Wellness</span>
+        <span class="tag">SEO Writing</span>
+        <span class="tag">Long-Form Articles</span>
+      </div>
+    </div>
+    <div class="about-right reveal">
+      <div class="about-credentials">
+        <div class="credential">
+          <div class="cred-icon">🎓</div>
+          <div class="cred-text">
+            <strong>BS English — Applied Linguistics</strong>
+            <span>Academic foundation in language, communication &amp; research</span>
+          </div>
+        </div>
+        <div class="credential">
+          <div class="cred-icon">✍️</div>
+          <div class="cred-text">
+            <strong>3+ Years SEO Content Writing</strong>
+            <span>Blogs, articles, and copy that rank and convert</span>
+          </div>
+        </div>
+        <div class="credential">
+          <div class="cred-icon">💪</div>
+          <div class="cred-text">
+            <strong>Personal Weight Loss Journey</strong>
+            <span>Research-driven — I understand what readers truly need</span>
+          </div>
+        </div>
+        <div class="credential">
+          <div class="cred-icon">🌍</div>
+          <div class="cred-text">
+            <strong>Open to Freelance &amp; Full-Time</strong>
+            <span>Remote-ready, deadline-driven, global clients welcome</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NICHES -->
+  <section id="niches">
+    <div class="reveal">
+      <p class="section-tag">My Expertise</p>
+      <h2 class="section-h2">Niches I Write In</h2>
+      <p class="section-body">Focused, research-backed content in the topics I know most deeply.</p>
+    </div>
+    <div class="niches-grid">
+      <div class="niche-card reveal">
+        <span class="niche-emoji">🏋️</span>
+        <h3 class="niche-name">Fitness</h3>
+        <p class="niche-desc">Training principles, gym guides, progressive overload, home workouts, and movement science explained simply.</p>
+      </div>
+      <div class="niche-card reveal">
+        <span class="niche-emoji">🏃</span>
+        <h3 class="niche-name">Workout</h3>
+        <p class="niche-desc">Exercise breakdowns, programme design, cardio vs strength, mobility, and recovery content that drives action.</p>
+      </div>
+      <div class="niche-card reveal">
+        <span class="niche-emoji">🥗</span>
+        <h3 class="niche-name">Nutrition</h3>
+        <p class="niche-desc">Macros, meal planning, supplements, fat loss nutrition, and diet culture debunked and done right.</p>
+      </div>
+      <div class="niche-card reveal">
+        <span class="niche-emoji">🌿</span>
+        <h3 class="niche-name">Health &amp; Wellness</h3>
+        <p class="niche-desc">Sleep, stress, hormones, and the lifestyle factors that make or break a fitness journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="reveal">
+      <p class="section-tag">What I Offer</p>
+      <h2 class="section-h2">Content That Works<br>as Hard as You Do</h2>
+      <p class="section-body">Every piece is researched, SEO-optimised, and written to connect with your specific audience.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="service-num">01</span>
+        <h3 class="service-name">SEO Blogs &amp; Articles</h3>
+        <p class="service-desc">Long-form, keyword-targeted blog posts that rank on Google and genuinely help your readers make better health decisions.</p>
+        <ul class="service-list">
+          <li>Keyword research &amp; on-page SEO</li>
+          <li>1,000–3,000+ word articles</li>
+          <li>Internal linking &amp; meta copy</li>
+          <li>Fact-checked, source-backed content</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-num">02</span>
+        <h3 class="service-name">Website Copy</h3>
+        <p class="service-desc">Homepage, about, and service page copy that positions your brand, speaks your audience's language, and turns visitors into clients.</p>
+        <ul class="service-list">
+          <li>Homepage &amp; landing pages</li>
+          <li>About page storytelling</li>
+          <li>Service &amp; product descriptions</li>
+          <li>Brand voice consistency</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FITNESS BLOGS -->
+  <section id="blogs">
+    <div class="blogs-header reveal">
+      <div>
+        <p class="section-tag">Fitness Blog</p>
+        <h2 class="section-h2">Latest Articles</h2>
+      </div>
+    </div>
+    <div class="blogs-grid">
+      <!-- Replace # with your real blog URLs -->
+      <a href="#" class="blog-card reveal">
+        <p class="blog-niche">Strength Training</p>
+        <h3 class="blog-title">The Science of Progressive Overload Every Lifter Should Know</h3>
+        <p class="blog-excerpt">Why adding weight isn't the only way to progress — and the smarter principles that lead to lasting muscle and strength gains.</p>
+        <span class="blog-read">Read Article</span>
+      </a>
+      <a href="#" class="blog-card reveal">
+        <p class="blog-niche">Nutrition</p>
+        <h3 class="blog-title">How Much Protein Do You Really Need? The Research-Backed Answer</h3>
+        <p class="blog-excerpt">Cutting through the noise on protein intake — what studies actually say, and how to apply it to your specific goal.</p>
+        <span class="blog-read">Read Article</span>
+      </a>
+      <a href="#" class="blog-card reveal">
+        <p class="blog-niche">Fat Loss</p>
+        <h3 class="blog-title">Lose Fat Without Losing Muscle: A Practical, Evidence-Based Guide</h3>
+        <p class="blog-excerpt">The strategic approach to cutting calories while preserving lean mass — for a result that actually lasts.</p>
+        <span class="blog-read">Read Article</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- OTHER NICHES -->
+  <section id="other-niches">
+    <div class="reveal">
+      <p class="section-tag">More Of My Work</p>
+      <h2 class="section-h2">Other Niches I've Written In</h2>
+      <p class="section-body">A selection of published work outside fitness. Add your article URLs below.</p>
+    </div>
+    <div class="other-blogs-list">
+      <!-- Replace # with your article URL and update the title -->
+      <a href="#" class="other-blog-item reveal">
+        <span class="other-num">01</span>
+        <span class="other-title">Add your article title and replace # with URL</span>
+        <span class="other-arrow">↗</span>
+      </a>
+      <a href="#" class="other-blog-item reveal">
+        <span class="other-num">02</span>
+        <span class="other-title">Add your article title and replace # with URL</span>
+        <span class="other-arrow">↗</span>
+      </a>
+      <a href="#" class="other-blog-item reveal">
+        <span class="other-num">03</span>
+        <span class="other-title">Add your article title and replace # with URL</span>
+        <span class="other-arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="reveal">
+      <p class="section-tag">Get In Touch</p>
+      <h2 class="section-h2">Let's Work Together</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="avail-badge"><span class="avail-dot"></span>Available Now</div>
+        <p>Whether you need a one-off article, an ongoing content partnership, or a full website copy project — I'd love to hear about it. Open to freelance and full-time opportunities.</p>
+        <a href="mailto:amnablouch867@gmail.com" class="contact-email">
+          <span class="contact-email-icon">✉️</span>
+          amnablouch867@gmail.com
+        </a>
+        <p style="font-size:0.78rem; color:rgba(255,255,255,0.25);">Response within 24 hours · Remote-friendly · Global clients welcome</p>
+      </div>
+      <div class="reveal">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Project Type (e.g. SEO Blog, Website Copy)" />
+          <textarea rows="5" placeholder="Tell me about your project..."></textarea>
+          <button type="submit" class="btn-submit">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER with social icons -->
+  <footer>
+    <span class="footer-logo">Amna <span>Shahid</span></span>
+    <div class="social-icons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/amnashahid-%E2%9C%A8content-writer/" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/seowriting_by_amna/" target="_blank" rel="noopener" class="social-icon" title="Instagram">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/amna.shahid.801040/" target="_blank" rel="noopener" class="social-icon" title="Facebook">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <!-- Pinterest -->
+      <a href="https://www.pinterest.com/AmnaShahidfitnesswriter/" target="_blank" rel="noopener" class="social-icon" title="Pinterest">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      </a>
+      <!-- Email -->
+      <a href="mailto:amnablouch867@gmail.com" class="social-icon" title="Email">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+    <p>© 2025 Amna Shahid · Fitness Content Writer · fitwithamna</p>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => io.observe(el));
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', scrollY > 50);
+    });
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Message Sent ✓';
+      btn.style.background = '#146b42';
+      btn.disabled = true;
+    }
+  </script>
+</body>
+</html>
