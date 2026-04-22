@@ -1,1 +1,9 @@
+title: Fitwithamna
+url: "https://fitwithamna.me"
+baseurl: ""
+permalink: /:title/
 theme: minima
+
+plugins:
+  - jekyll-feed
+  
