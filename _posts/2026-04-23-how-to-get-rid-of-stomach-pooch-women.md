@@ -4,7 +4,7 @@ title: "How to Get Rid of stomach pooch — From a Woman Who Actually Did It"
 date: 2026-04-23
 category: "Weight Loss"
 excerpt: "Discover how to reduce stomach pooch women struggle with—real tips, science-backed strategies, and one woman’s 30kg weight loss journey that actually works.."
-image: (/assets/images/how-to-get-rid-of-stomach-pooch-women(1).webp)
+image: (/assets/images/how-to-get-rid-of-stomach-pooch-women.webp)
 ---
 # How to Get Rid of Lower Belly Pooch — From a Woman Who Actually Did It
 
@@ -18,7 +18,7 @@ image: (/assets/images/how-to-get-rid-of-stomach-pooch-women(1).webp)
 
 ---
 
-![How to Get Rid of Stomach Pooch Women](/assets/images/how-to-get-rid-of-stomach-pooch-women(1).webp)
+![How to Get Rid of Stomach Pooch Women](/assets/images/how-to-get-rid-of-stomach-pooch-women.webp)
 *A lower belly pooch is often normal, not a failure.* 
 
 ---
