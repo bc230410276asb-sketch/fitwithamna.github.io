@@ -4,11 +4,15 @@
   <url>
     <loc>https://fitwithamna.me/</loc>
     <priority>1.0</priority>
+    <lastmod>2025-04-23</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://fitwithamna.me/blogs.html</loc>
     <priority>0.8</priority>
+    <lastmod>2025-04-23</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
 
 </urlset>
