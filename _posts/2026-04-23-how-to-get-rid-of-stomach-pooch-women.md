@@ -18,6 +18,11 @@ image: (/assets/images/how-to-get-rid-of-stomach-pooch-women.webp)
 
 ---
 
+![How to Get Rid of Stomach Pooch Women](/assets/images/how-to-get-rid-of-stomach-pooch-women.webp)
+*A lower belly pooch is often normal, not a failure.* 
+
+---
+
 I lost 30+ kilograms. Here's what the research says, what nobody tells you, and why you're not as broken as you think.
 
 Let me start with the thing I wish someone had said to me years ago:
