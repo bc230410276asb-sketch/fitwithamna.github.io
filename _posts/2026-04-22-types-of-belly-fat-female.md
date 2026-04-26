@@ -129,6 +129,9 @@ This is documented clearly in research: [ICCM](https://www.iccm.com.au/visceral-
 An underactive thyroid (hypothyroidism) slows metabolism and often causes weight gain concentrated in the midsection, along with fatigue, cold sensitivity, hair loss, and constipation. If belly fat is appearing alongside these symptoms and not responding to diet/exercise, thyroid function is worth investigating with a doctor — not a home test.
 
 ---
+![Hormonal belly Causes Checklist](/assets/images/hormonal-belly-causes-checklist.webp)
+*Hormones Play a Powerful Role in Where Your Body Stores Fat.*
+---
 
 ## What Actually Works: An Evidence-Based Strategy (That Doesn't Require Perfection)
 
@@ -167,6 +170,11 @@ If your primary concern is the lower belly pooch or muffin top, hear this: subcu
 In the meantime, work on posture and core strength. A strong transverse abdominis (the deepest core muscle) acts like a natural corset, physically pulling the abdomen inward regardless of fat levels.
 
 ---
+![What actually works for lower belly fat](/assets/images/what-actually-works-for-lower-belly-fat.webp)
+*Lower Belly Fat Loss: Checklist .*
+---
+
+
 
 ## A Word From Me to You
 
