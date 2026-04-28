@@ -51,7 +51,7 @@ What you eat creates the hormonal and inflammatory environment your body operate
 
 ---
 
-![what-foods-should-i-avoid-to-burn-lower-belly-fat](/assets/images/what-foods-should-i-avoid-to-burn-lower-belly-fat..webp)
+![what-foods-should-i-avoid-to-burn-lower-belly-fat](/assets/images/what-foods-should-i-avoid-to-burn-lower-belly-fat.webp)
 *Cut these triggers to calm hormones, reduce bloating, and support lower belly fat loss.*
 
 ---
