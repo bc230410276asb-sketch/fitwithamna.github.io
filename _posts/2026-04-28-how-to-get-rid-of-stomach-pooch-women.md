@@ -4,7 +4,7 @@ layout: post
 
 title: "How to Get Rid of stomach pooch — From a Woman Who Actually Did It"
 
-date: 2026-04-23
+date: 2026-04-28
 
 category: "Weight Loss"
 
