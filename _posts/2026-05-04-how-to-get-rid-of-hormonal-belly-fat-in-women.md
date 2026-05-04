@@ -32,7 +32,7 @@ Let me break down what's actually happening — and what I've learned actually m
 
 ## What Is a Hormonal Belly, Really?
 
-A hormonal belly isn't just a regular [type of belly fat](https://fitwithamna.me/types-of-belly-fat-female/). It's [visceral](https://fitwithamna.me/how-to-get-rid-of-female-visceral-fat/0) and [subcutaneous fat](https://fitwithamna.me/how-to-get-rid-of-female-subcutaneous-fat/) that accumulates specifically in the lower abdomen as a direct result of hormonal imbalances — most commonly low estrogen, elevated cortisol, or insulin resistance.
+A hormonal belly isn't just a regular [type of belly fat](https://fitwithamna.me/types-of-belly-fat-female/). It's [visceral](https://fitwithamna.me/how-to-get-rid-of-female-visceral-fat/) and [subcutaneous fat](https://fitwithamna.me/how-to-get-rid-of-female-subcutaneous-fat/) that accumulates specifically in the lower abdomen as a direct result of hormonal imbalances — most commonly low estrogen, elevated cortisol, or insulin resistance.
 
 Here's how each one shows up:
 
@@ -82,12 +82,12 @@ You cannot out-train an untreated thyroid disorder. You cannot out-diet estrogen
 The goal here isn't fewer calories. The goal is **hormonal stability** — keeping insulin low and steady, reducing cortisol triggers, and supporting estrogen metabolism.
 
 **Cut refined carbs and added sugar aggressively.**
-This is the most impactful dietary change for insulin-driven belly fat. A [2022 meta-analysis in *Nutrients*](https://www.mdpi.com/2072-6643/14/7/14300 found that low-glycemic diets significantly reduced fasting insulin and visceral adiposity in women — independent of calorie restriction.
+This is the most impactful dietary change for insulin-driven belly fat. A [2022 meta-analysis in *Nutrients*](https://www.mdpi.com/2072-6643/14/7/1430) found that low-glycemic diets significantly reduced fasting insulin and visceral adiposity in women — independent of calorie restriction.
 
 ![high-carb-foods](/assets/images/high-carb-foods.webp)
 
 **Eat 20–25g of protein at every meal.**
-Protein blunts the insulin response of carbohydrates eaten in the same meal, keeps you satiated, and preserves muscle mass during fat loss. A [2020 study in *Obesity*](https://onlinelibrary.wiley.com/doi/10.1002/oby.229350 showed high-protein diets (>25% of calories from protein) reduced visceral fat significantly more than moderate-protein diets in women.
+Protein blunts the insulin response of carbohydrates eaten in the same meal, keeps you satiated, and preserves muscle mass during fat loss. A [2020 study in *Obesity*](https://onlinelibrary.wiley.com/doi/10.1002/oby.22935) showed high-protein diets (>25% of calories from protein) reduced visceral fat significantly more than moderate-protein diets in women.
 
 ![how-to-get-25-g-protein-per-meal](/assets/images/how-to-get-25-g-protein-per-meal.webp)
 
@@ -116,7 +116,7 @@ Two sessions of HIIT per week (20–30 minutes) is enough. More than that starts
 Walking 30–45 minutes daily is one of the most underrated tools for hormonal balance. It's anti-cortisol, improves insulin sensitivity, and doesn't stress the nervous system.
 
 **Yoga and resistance training combined.**
-A [2020 study in *Menopause*](https://journals.lww.com/menopausejournal/abstract/2020/09000/yoga_for_menopausal_symptoms.00013.aspx0 found that 12 weeks of combined yoga and resistance training significantly reduced cortisol levels and abdominal fat in perimenopausal women — hitting the stress axis and metabolic axis simultaneously.
+A [2020 study in *Menopause*](https://journals.lww.com/menopausejournal/abstract/2020/09000/yoga_for_menopausal_symptoms.00013.aspx) found that 12 weeks of combined yoga and resistance training significantly reduced cortisol levels and abdominal fat in perimenopausal women — hitting the stress axis and metabolic axis simultaneously.
 
 ---
 
