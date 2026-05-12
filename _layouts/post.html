@@ -10,14 +10,16 @@ layout: default
     {{ page.category }}
   </div>
 
-  <div style="line-height: 1.8; font-size: 1.05rem; color: #222;">
-<style>
-.formkit-form .formkit-header h1,
-.formkit-form .formkit-header h2 {
+  <style>
+.formkit-form [data-element="header"] h1 {
   font-size: 1.2rem !important;
   line-height: 1.4 !important;
 }
 </style>
+
+<div style="line-height: 1.8; font-size: 1.05rem; color: #222;">
+  {{ content }}
+</div>
 
   <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.9rem; color: #555;">
     Written by <strong>Amna Shahid</strong> — SEO fitness & health content writer.
