@@ -5,10 +5,6 @@ date: 2026-05-13
 category: Weight Loss
 Excerpt: Not seeing results with PCOS workouts? Try these easy yoga poses to reduce belly fat, balance hormones, and support natural weight loss at home. 
 ---
----
-layout: post
-title: "Yoga for PCOS Belly Fat and Weight Loss for Beginners: What Actually Works"
----
 
 # Yoga for PCOS Belly Fat and Weight Loss for Beginners: What Actually Works
 
