@@ -65,7 +65,7 @@ These target your deep core, reduce bloating, and are gentle enough for absolute
 
 Lie on your back, feet flat, knees bent. Slowly lift your hips, squeeze your glutes, hold for two seconds, lower. This activates your posterior chain and helps regulate blood sugar by engaging large muscle groups. Do 10–12 reps. Don't forget to inhale and exhale during each rep.
 
-![glute-bridges-as-pilates-for-pcos-belly-at-home-for-beginners](/assets/images/assets/images/glute-bridges-as-pilates-for-pcos-belly-at-home-for-beginners.webp)
+![glute-bridges-as-pilates-for-pcos-belly-at-home-for-beginners](/assets/images/glute-bridges-as-pilates-for-pcos-belly-at-home-for-beginners.webp)
 
 **2. Bird Dog**
 
