@@ -128,7 +128,7 @@ Cardio is one of the most powerful tools for overall fat reduction, with particu
 
 ### HIIT (High-Intensity Interval Training)
 
-A 2018 meta-analysis of 39 studies in British [Journal of Sports Medicine](https://bjsm.bmj.com/content/53/10/6550) found HIIT reduced waist circumference by 4.3 cm more than moderate-intensity steady-state cardio, in 40% less total exercise time. 2 sessions per week is the sweet spot for most women — more than that raises cortisol and can backfire on lower belly fat specifically. I prefer once a week on bollywood songs.
+A 2018 meta-analysis of 36 studies in British [Journal of Sports Medicine](https://pmc.ncbi.nlm.nih.gov/articles/PMC8292807/) found HIIT reduced waist circumference by 4.3 cm more than moderate-intensity steady-state cardio, in 40% less total exercise time. 2 sessions per week is the sweet spot for most women — more than that raises cortisol and can backfire on lower belly fat specifically. I prefer once a week on bollywood songs.
 
 ### Zone 2 / Low-Intensity Steady State (LISS)
 
