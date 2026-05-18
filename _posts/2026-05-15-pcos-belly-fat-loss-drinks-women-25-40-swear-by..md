@@ -68,7 +68,7 @@ Girl due to slow metabolism, I face bloody constipation. PCOS really hits.
 **Why it works:** Green tea contains a catechin called EGCG (epigallocatechin gallate) — one of the most studied compounds for abdominal fat reduction. A meta-analysis in the *International Journal of Obesity* found that EGCG combined with caffeine significantly reduced waist circumference over 12 weeks. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/19597519/)) For PCOS specifically, green tea's ability to improve insulin sensitivity makes it a double-win.
 
 ---
-![iced-green-tea-for-pcos-in-summers](/assets/images/assets/images/iced-green-tea-for-pcos-in-summers.webp)
+![iced-green-tea-for-pcos-in-summers](/assets/images/iced-green-tea-for-pcos-in-summers.webp)
 
 
 ### 3. Apple Cider Vinegar (ACV) Water — The Insulin Regulator
