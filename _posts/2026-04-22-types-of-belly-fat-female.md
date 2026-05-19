@@ -22,7 +22,6 @@ Before you pick an approach — a diet, a workout, a supplement — you need to 
 
 Let me walk you through everything: the biology, the shapes, and — most importantly — what actually moves the needle for each type.
 
----
 {% include belly-quiz.html %}
 
 ## The Two Main Types of Belly Fat in Women: Subcutaneous vs. Visceral
