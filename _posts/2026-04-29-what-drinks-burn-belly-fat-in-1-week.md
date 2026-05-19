@@ -4,11 +4,7 @@ title: What drinks burn belly fat in 1 week
 date: 2026-04-29
 category: Weight Loss
 Excerpt: Struggling with belly fat? Discover 6 powerful drinks and a 7-day routine that helps reduce bloating, boost metabolism, and flatten your stomach naturally.
-
-
 ---
-
-# What to Drink to Lose Belly Fat in 1 Week?
 
 ## Key Takeaways Before You Read
 
