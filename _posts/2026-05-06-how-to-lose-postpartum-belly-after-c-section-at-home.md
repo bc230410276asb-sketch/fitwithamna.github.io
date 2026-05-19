@@ -6,8 +6,6 @@ category: Weight Loss
 excerpt: Most post-C-section belly advice misses the real cause -  scar adhesion. This guide covers the 7-layer anatomy, proven rehab exercises, nutrition, and a week-by-week recovery plan.
 ---
 
-# How to Lose Postpartum Belly After C-Section at Home (What Actually Works)
-
 ## Key Takeaways
 
 * Your C-section pooch is not just fat — it's a combination of swelling, scar tissue adhesion, and weakened abdominal muscles, which is why regular "[lose belly fat](https://fitwithamna.me/how-to-get-rid-of-stomach-pooch-women/)" advice rarely works post-surgery.
