@@ -1,12 +1,10 @@
 ---
 layout: post
-Title: Is Your Lower Belly Pooch Normal? Absolutely Yes.
+Title: Is Your Lower Belly Pooch Normal? 
 date: 2026-05-08
 category: Weight Loss
 Excerpt: No, it's not your uterus. No, it's not a health problem. The lower belly pooch is one of the most normal things a female body does — backed by science. Read this before Googling another "fix."
 ---
-
-# Is Your Lower Belly Pooch Normal? (Spoiler: Absolutely Yes)
 
 ## Key Takeaways
 
