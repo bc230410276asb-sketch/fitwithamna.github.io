@@ -22,7 +22,227 @@ Before you pick an approach — a diet, a workout, a supplement — you need to 
 
 Let me walk you through everything: the biology, the shapes, and — most importantly — what actually moves the needle for each type.
 
-{% include belly-quiz.html %}
+<!-- ================================================
+     BELLY TYPE QUIZ — embed anywhere in your blog post
+     Paste this block where you want the quiz to appear.
+     Works in Jekyll, Ghost, WordPress (HTML block), etc.
+     ================================================ -->
+
+<style>
+.btq-wrap *{box-sizing:border-box;margin:0;padding:0;}
+.btq-wrap{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:640px;margin:2rem auto;padding:0 1rem;}
+.btq-header{margin-bottom:1.5rem;}
+.btq-header h3{font-size:20px;font-weight:600;color:#1a1a1a;margin-bottom:6px;display:flex;align-items:center;gap:8px;}
+.btq-header p{font-size:14px;color:#666;line-height:1.6;}
+.btq-progress-meta{display:flex;justify-content:space-between;font-size:12px;color:#888;margin-bottom:6px;}
+.btq-track{height:4px;background:#efefef;border-radius:999px;overflow:hidden;margin-bottom:1.5rem;}
+.btq-fill{height:100%;background:#1a1a1a;border-radius:999px;transition:width .35s ease;}
+.btq-card{background:#fff;border:1px solid #e5e5e5;border-radius:12px;padding:1.25rem;margin-bottom:1rem;}
+.btq-qnum{font-size:12px;color:#999;margin-bottom:6px;display:block;}
+.btq-qtext{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:1rem;line-height:1.5;}
+.btq-options{display:flex;flex-direction:column;gap:8px;}
+.btq-opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:#f8f8f8;border:1px solid #e5e5e5;border-radius:8px;padding:10px 14px;font-size:14px;color:#1a1a1a;cursor:pointer;transition:border-color .15s,background .15s;font-family:inherit;}
+.btq-opt:hover{border-color:#bbb;background:#fff;}
+.btq-opt.selected{border-color:#1a1a1a;background:#fff;}
+.btq-letter{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#fff;border:1px solid #ccc;font-size:12px;font-weight:600;color:#666;flex-shrink:0;transition:background .15s,color .15s;}
+.btq-opt.selected .btq-letter{background:#1a1a1a;color:#fff;border-color:#1a1a1a;}
+.btq-nav{display:flex;justify-content:space-between;align-items:center;margin-top:1rem;}
+.btq-btn{display:flex;align-items:center;gap:6px;padding:9px 18px;border-radius:8px;border:1px solid #ccc;background:transparent;color:#1a1a1a;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;transition:background .15s;}
+.btq-btn:hover{background:#f2f2f2;}
+.btq-btn.primary{background:#1a1a1a;color:#fff;border-color:#1a1a1a;}
+.btq-btn.primary:hover{opacity:.85;}
+.btq-btn:disabled{opacity:.35;cursor:not-allowed;}
+.btq-dots{display:flex;gap:6px;}
+.btq-dot{width:8px;height:8px;border-radius:50%;background:#e0e0e0;}
+.btq-dot.active{background:#1a1a1a;}
+.btq-dot.done{background:#999;}
+.btq-result{display:none;}
+.btq-rcard{background:#fff;border:1px solid #e5e5e5;border-radius:12px;padding:1.5rem;}
+.btq-badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 12px;border-radius:6px;margin-bottom:1rem;}
+.btq-rtitle{font-size:19px;font-weight:700;color:#1a1a1a;margin-bottom:8px;}
+.btq-rdesc{font-size:14px;color:#555;line-height:1.7;margin-bottom:1.25rem;}
+.btq-traits{display:flex;flex-direction:column;gap:8px;margin-bottom:1.25rem;}
+.btq-trait{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#555;line-height:1.5;}
+.btq-check{color:#1a1a1a;font-weight:700;flex-shrink:0;}
+.btq-cta{font-size:13px;color:#555;border-top:1px solid #eee;padding-top:1rem;line-height:1.6;}
+.btq-retake{margin-top:1rem;}
+</style>
+
+<div class="btq-wrap" id="btq-root">
+  <div id="btq-quiz">
+    <div class="btq-header">
+      <h3>🔍 Which belly type are you?</h3>
+      <p>Answer 5 quick questions to find out which type of belly fat is holding you back — and exactly what to do about it.</p>
+    </div>
+    <div class="btq-progress-meta">
+      <span id="btq-prog-label">Question 1 of 5</span>
+      <span id="btq-prog-pct">0%</span>
+    </div>
+    <div class="btq-track"><div class="btq-fill" id="btq-fill" style="width:0%"></div></div>
+    <div class="btq-card">
+      <span class="btq-qnum" id="btq-qnum">01 / 05</span>
+      <p class="btq-qtext" id="btq-qtext"></p>
+      <div class="btq-options" id="btq-opts"></div>
+    </div>
+    <div class="btq-nav">
+      <button class="btq-btn" id="btq-back" onclick="btqBack()" disabled>← Back</button>
+      <div class="btq-dots" id="btq-dots"></div>
+      <button class="btq-btn primary" id="btq-next" onclick="btqNext()" disabled>Next →</button>
+    </div>
+  </div>
+
+  <div class="btq-result" id="btq-result">
+    <div class="btq-rcard">
+      <div class="btq-badge" id="btq-rbadge"></div>
+      <h3 class="btq-rtitle" id="btq-rtitle"></h3>
+      <p class="btq-rdesc" id="btq-rdesc"></p>
+      <div class="btq-traits" id="btq-rtraits"></div>
+      <p class="btq-cta" id="btq-rcta"></p>
+      <button class="btq-btn btq-retake" onclick="btqRetake()">↺ Retake quiz</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+var qs=[
+  {text:"How does your belly feel when you touch it?",opts:[
+    {l:"A",t:"Soft and pinchable — I can easily grab a handful",v:"A"},
+    {l:"B",t:"Firm and tight, even if I'm not overweight",v:"B"},
+    {l:"C",t:"Mostly a lower belly pouch below the navel",v:"C"},
+    {l:"D",t:"It fluctuates — sometimes flat, sometimes bloated",v:"D"}
+  ]},
+  {text:"Where is most of your belly fat stored?",opts:[
+    {l:"A",t:"Spread evenly all over the stomach",v:"A"},
+    {l:"B",t:"Upper belly or around the rib area",v:"B"},
+    {l:"C",t:"Lower belly only — below the navel",v:"C"},
+    {l:"D",t:"Whole belly looks puffy or bloated",v:"D"}
+  ]},
+  {text:"How would you describe your waist shape?",opts:[
+    {l:"A",t:"Soft waist — easy to grab fat around it",v:"A"},
+    {l:"B",t:"Round or hard belly, even when weight feels normal",v:"B"},
+    {l:"C",t:"Lower belly sticks out more than upper belly",v:"C"},
+    {l:"D",t:"My waist changes daily depending on food and stress",v:"D"}
+  ]},
+  {text:"What is your biggest struggle?",opts:[
+    {l:"A",t:"Overall fat loss is slow no matter what I try",v:"A"},
+    {l:"B",t:"Belly won't reduce even with consistent workouts",v:"B"},
+    {l:"C",t:"Lower belly pooch just won't go away",v:"C"},
+    {l:"D",t:"Bloating and inconsistent stomach size day to day",v:"D"}
+  ]},
+  {text:"Which best describes your stress and lifestyle pattern?",opts:[
+    {l:"A",t:"Moderate stress, fairly balanced routine",v:"A"},
+    {l:"B",t:"High stress, poor sleep, always a busy mind",v:"B"},
+    {l:"C",t:"Post-meal discomfort or slow digestion",v:"C"},
+    {l:"D",t:"Irregular eating and sensitivity to certain foods",v:"D"}
+  ]}
+];
+
+var rs={
+  A:{badge:"📦 Subcutaneous fat dominant",bg:"#E6F1FB",color:"#0C447C",
+     title:"You likely have subcutaneous belly fat",
+     desc:"This is the soft, pinchable layer just under the skin. It's stubborn — but less dangerous than visceral fat. The key is sustained effort with a caloric deficit, adequate protein, and resistance training.",
+     traits:["Fat is visible and pinchable across the whole midsection","Responds best to sustained caloric deficit + strength training","More common in women — partly by physiological design","Progress is slower but very achievable with consistency"],
+     cta:"<strong>What to do next:</strong> Moderate caloric deficit, 1.6–2.2g protein per kg body weight, compound lifts 3×/week. Avoid cardio-only routines — they won't shift this type efficiently."},
+  B:{badge:"🔥 Visceral / stress belly pattern",bg:"#FAECE7",color:"#712B13",
+     title:"You likely have a stress or visceral belly",
+     desc:"Your belly fat lives deep in the abdominal cavity, around the organs. It often feels firm and protrudes even when you're otherwise slim. The good news: visceral fat responds faster to lifestyle changes than subcutaneous fat.",
+     traits:["Belly feels firm or hard rather than soft and doughy","Chronic cortisol is likely directing fat to your abdomen","Carries higher health risk — but responds faster to diet changes","Aerobic exercise + sleep improvement are your strongest levers"],
+     cta:"<strong>What to do next:</strong> Prioritise 8hrs sleep, reduce HIIT in favour of zone 2 cardio, cut refined sugar and alcohol, and manage daily stress. Your body is storing fat defensively — fight the root cause."},
+  C:{badge:"⬇️ Lower belly pooch pattern",bg:"#EAF3DE",color:"#27500A",
+     title:"You likely have a lower belly pooch",
+     desc:"This gentle mound below the belly button has layered causes: subcutaneous fat, weakened deep core muscles, gut bloating, and sometimes pelvic floor dysfunction. Crunches alone won't fix this.",
+     traits:["Fat sits primarily below the belly button","Deep core muscles (transverse abdominis) are often weak","May be worsened by diastasis recti, especially post-pregnancy","Anti-inflammatory eating and gut health play a major role"],
+     cta:"<strong>What to do next:</strong> Focus on deep core work (dead bugs, bird-dogs, diaphragmatic breathing), eat anti-inflammatory foods, and if you've had children, assess for diastasis recti before loading heavy core exercises."},
+  D:{badge:"💧 Bloating / gut-related belly",bg:"#FAEEDA",color:"#633806",
+     title:"Your belly may be driven by bloating and gut issues",
+     desc:"Your belly size fluctuates significantly — sometimes flat, other times distended. This pattern points to gut-related causes: food sensitivities, poor microbiome balance, irregular eating, or stress-triggered digestive issues.",
+     traits:["Belly size is inconsistent — worse after certain foods or stress","May not be fat — the issue is inflammation and gas","Gut health and food timing are the primary levers here","Often confused with fat — but responds to different interventions"],
+     cta:"<strong>What to do next:</strong> Try an elimination trial (gluten, dairy, FODMAPs), establish regular meal timing, reduce stress around eating, and track belly size vs your food diary for 2 weeks."}
+};
+
+var cur=0,ans=new Array(qs.length).fill(null);
+
+function render(){
+  var q=qs[cur];
+  document.getElementById('btq-qnum').textContent=String(cur+1).padStart(2,'0')+' / 0'+qs.length;
+  document.getElementById('btq-qtext').textContent=q.text;
+  document.getElementById('btq-prog-label').textContent='Question '+(cur+1)+' of '+qs.length;
+  var pct=Math.round((cur/qs.length)*100);
+  document.getElementById('btq-prog-pct').textContent=pct+'%';
+  document.getElementById('btq-fill').style.width=pct+'%';
+  var w=document.getElementById('btq-opts');w.innerHTML='';
+  q.opts.forEach(function(o){
+    var b=document.createElement('button');
+    b.className='btq-opt'+(ans[cur]===o.v?' selected':'');
+    b.innerHTML='<span class="btq-letter">'+o.l+'</span><span>'+o.t+'</span>';
+    b.onclick=(function(v){return function(){select(v);};})(o.v);
+    w.appendChild(b);
+  });
+  document.getElementById('btq-back').disabled=cur===0;
+  var last=cur===qs.length-1;
+  var nb=document.getElementById('btq-next');
+  nb.textContent=last?'See my result →':'Next →';
+  nb.disabled=ans[cur]===null;
+  renderDots();
+}
+
+function renderDots(){
+  var w=document.getElementById('btq-dots');w.innerHTML='';
+  qs.forEach(function(_,i){
+    var d=document.createElement('div');
+    d.className='btq-dot'+(i===cur?' active':(ans[i]!==null?' done':''));
+    w.appendChild(d);
+  });
+}
+
+function select(v){
+  ans[cur]=v;
+  document.querySelectorAll('.btq-opt').forEach(function(b){
+    var l=b.querySelector('.btq-letter').textContent;
+    var o=qs[cur].opts.find(function(x){return x.l===l;});
+    if(o&&o.v===v)b.classList.add('selected');else b.classList.remove('selected');
+  });
+  document.getElementById('btq-next').disabled=false;
+  renderDots();
+}
+
+window.btqNext=function(){
+  if(ans[cur]===null)return;
+  if(cur<qs.length-1){cur++;render();}else showResult();
+};
+window.btqBack=function(){if(cur>0){cur--;render();}};
+window.btqRetake=function(){
+  cur=0;ans=new Array(qs.length).fill(null);
+  document.getElementById('btq-result').style.display='none';
+  document.getElementById('btq-quiz').style.display='block';
+  render();
+};
+
+function showResult(){
+  var c={A:0,B:0,C:0,D:0};
+  ans.forEach(function(a){if(a)c[a]++;});
+  var w=Object.keys(c).reduce(function(a,b){return c[a]>=c[b]?a:b;});
+  var r=rs[w];
+  document.getElementById('btq-quiz').style.display='none';
+  var rs2=document.getElementById('btq-result');rs2.style.display='block';
+  var badge=document.getElementById('btq-rbadge');
+  badge.style.background=r.bg;badge.style.color=r.color;badge.textContent=r.badge;
+  document.getElementById('btq-rtitle').textContent=r.title;
+  document.getElementById('btq-rdesc').textContent=r.desc;
+  var tw=document.getElementById('btq-rtraits');tw.innerHTML='';
+  r.traits.forEach(function(t){
+    var row=document.createElement('div');row.className='btq-trait';
+    row.innerHTML='<span class="btq-check">✓</span><span>'+t+'</span>';
+    tw.appendChild(row);
+  });
+  document.getElementById('btq-rcta').innerHTML=r.cta;
+}
+
+render();
+})();
+</script>
+<!-- END BELLY TYPE QUIZ -->
 
 ## The Two Main Types of Belly Fat in Women: Subcutaneous vs. Visceral
 
