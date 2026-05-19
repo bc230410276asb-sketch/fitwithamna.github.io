@@ -6,7 +6,7 @@ category: Weight Loss
 Excerpt: You're eating clean, working out, and still can't lose the belly. It's not your fault — PCOS changes the rules. Here's what actually works.
 ---
 
-## KEY TAKEAWAYS
+## Key Takeaways
 
 * PCOS belly is driven by **insulin resistance and high cortisol** — not just calories. Treating the root cause is what actually moves the needle.
 * **Strength training** beats cardio for PCOS fat loss. Building muscle is the single most effective way to improve insulin sensitivity and shrink abdominal fat.
