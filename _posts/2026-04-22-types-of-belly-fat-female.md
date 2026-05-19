@@ -12,7 +12,7 @@ excerpt: Not all belly fat is the same. Women over 25 often carry stress, hormon
 * A [**2023 University of Alabama**](https://newsroom.heart.org/news/women-felt-more-stigma-about-abdominal-fat-than-men-regardless-of-body-weight) **study** found that how you *feel* about your body directly affects visceral fat accumulation in women — meaning stress and self-stigma are biological, not just emotional, problems.
 
 ---
-![Types of Belly Fat Female](/assets/images/types-of-belly-fat-female.webp)
+![types-of-belly-fat](/assets/images/types-of-belly-fat.webp)
 
 You're Not Failing. You Just Haven't Identified the Enemy Yet.
 
