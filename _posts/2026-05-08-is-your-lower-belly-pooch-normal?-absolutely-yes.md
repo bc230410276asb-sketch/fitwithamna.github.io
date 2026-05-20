@@ -63,6 +63,8 @@ Women's hips are wider and the pelvis tilts differently than men's — which nat
 
 During my luteal phase, I face bloating and feel gassy. My belly appears larger and that's completely normal. I try to drink milk with a pinch of turmeric during this phase.
 
+{% include cycle-bloating-tracker.html %}
+
 ### Diastasis recti and post-pregnancy changes
 
 Approximately [**60% of women**](https://my.clevelandclinic.org/health/diseases/22346-diastasis-recti) experience diastasis recti — a separation of the abdominal muscles — during or after pregnancy, which can result in a persistent pooch regardless of weight.
