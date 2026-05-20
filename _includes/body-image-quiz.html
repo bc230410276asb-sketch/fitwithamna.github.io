@@ -1,0 +1,207 @@
+<!-- BODY IMAGE QUIZ -->
+<style>
+.biq-wrap{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:620px;margin:2rem auto;padding:0 1rem;}
+.biq-head{margin-bottom:1.5rem;}
+.biq-head h3{font-size:19px;font-weight:600;color:#1a1a1a;margin-bottom:6px;}
+.biq-head p{font-size:14px;color:#666;line-height:1.6;}
+.biq-pmeta{display:flex;justify-content:space-between;font-size:12px;color:#888;margin-bottom:6px;}
+.biq-track{height:4px;background:#efefef;border-radius:999px;overflow:hidden;margin-bottom:1.5rem;}
+.biq-fill{height:100%;background:#1a1a1a;border-radius:999px;transition:width .35s ease;}
+.biq-card{background:#fff;border:1px solid #e5e5e5;border-radius:12px;padding:1.25rem;margin-bottom:1rem;}
+.biq-qnum{font-size:12px;color:#999;margin-bottom:6px;display:block;}
+.biq-qtext{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:1rem;line-height:1.5;}
+.biq-opts{display:flex;flex-direction:column;gap:8px;}
+.biq-opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:#f8f8f8;border:1px solid #e5e5e5;border-radius:8px;padding:10px 14px;font-size:14px;color:#1a1a1a;cursor:pointer;transition:border-color .15s,background .15s;font-family:inherit;}
+.biq-opt:hover{border-color:#bbb;background:#fff;}
+.biq-opt.sel{border-color:#1a1a1a;background:#fff;}
+.biq-ltr{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#fff;border:1px solid #ccc;font-size:12px;font-weight:600;color:#666;flex-shrink:0;transition:background .15s,color .15s;}
+.biq-opt.sel .biq-ltr{background:#1a1a1a;color:#fff;border-color:#1a1a1a;}
+.biq-nav{display:flex;justify-content:space-between;align-items:center;margin-top:1rem;}
+.biq-btn{display:flex;align-items:center;gap:6px;padding:9px 18px;border-radius:8px;border:1px solid #ccc;background:transparent;color:#1a1a1a;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;transition:background .15s;}
+.biq-btn:hover{background:#f2f2f2;}
+.biq-btn.pri{background:#1a1a1a;color:#fff;border-color:#1a1a1a;}
+.biq-btn.pri:hover{opacity:.85;}
+.biq-btn:disabled{opacity:.35;cursor:not-allowed;}
+.biq-dots{display:flex;gap:6px;}
+.biq-dot{width:8px;height:8px;border-radius:50%;background:#e0e0e0;}
+.biq-dot.active{background:#1a1a1a;}
+.biq-dot.done{background:#999;}
+.biq-result{display:none;}
+.biq-rcard{background:#fff;border:1px solid #e5e5e5;border-radius:12px;padding:1.5rem;}
+.biq-badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 12px;border-radius:6px;margin-bottom:1rem;}
+.biq-rtitle{font-size:19px;font-weight:700;color:#1a1a1a;margin-bottom:10px;}
+.biq-rdesc{font-size:14px;color:#555;line-height:1.75;margin-bottom:1.25rem;}
+.biq-note{font-size:13px;color:#666;border-top:1px solid #eee;padding-top:1rem;line-height:1.7;font-style:italic;}
+.biq-bars{display:flex;flex-direction:column;gap:6px;margin-bottom:1.25rem;}
+.biq-bar-row{display:flex;align-items:center;gap:10px;font-size:13px;color:#555;}
+.biq-bar-label{width:14px;font-weight:600;color:#1a1a1a;}
+.biq-bar-track{flex:1;height:6px;background:#efefef;border-radius:999px;overflow:hidden;}
+.biq-bar-fill{height:100%;border-radius:999px;transition:width .6s ease;}
+.biq-bar-count{width:16px;text-align:right;font-weight:600;color:#1a1a1a;}
+</style>
+<div class="biq-wrap" id="biq-root">
+<div id="biq-quiz">
+<div class="biq-head">
+<h3>&#10084; What's your relationship with your belly?</h3>
+<p>5 honest questions. No judgment. Just clarity about how your body image may be affecting your life.</p>
+</div>
+<div class="biq-pmeta">
+<span id="biq-plabel">Question 1 of 5</span>
+<span id="biq-ppct">0%</span>
+</div>
+<div class="biq-track"><div class="biq-fill" id="biq-fill" style="width:0%"></div></div>
+<div class="biq-card">
+<span class="biq-qnum" id="biq-qnum">01 / 05</span>
+<p class="biq-qtext" id="biq-qtext"></p>
+<div class="biq-opts" id="biq-opts"></div>
+</div>
+<div class="biq-nav">
+<button class="biq-btn" id="biq-back" onclick="biqBack()" disabled>&#8592; Back</button>
+<div class="biq-dots" id="biq-dots"></div>
+<button class="biq-btn pri" id="biq-next" onclick="biqNext()" disabled>Next &#8594;</button>
+</div>
+</div>
+<div class="biq-result" id="biq-result">
+<div class="biq-rcard">
+<div class="biq-badge" id="biq-rbadge"></div>
+<h3 class="biq-rtitle" id="biq-rtitle"></h3>
+<div class="biq-bars" id="biq-bars"></div>
+<p class="biq-rdesc" id="biq-rdesc"></p>
+<p class="biq-note" id="biq-rnote"></p>
+<div style="margin-top:1rem;">
+<button class="biq-btn" onclick="biqRetake()">&#8635; Retake quiz</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+(function(){
+var qs=[
+{text:"How often do you check your belly in the mirror?",opts:[
+{l:"A",t:"Rarely — I don't think about it much",v:"A"},
+{l:"B",t:"Sometimes, before going out",v:"B"},
+{l:"C",t:"Multiple times a day",v:"C"},
+{l:"D",t:"I avoid mirrors completely",v:"D"}
+]},
+{text:"Have you ever skipped an outing, event, or photo because of your belly?",opts:[
+{l:"A",t:"Never",v:"A"},
+{l:"B",t:"Once or twice",v:"B"},
+{l:"C",t:"Frequently",v:"C"},
+{l:"D",t:"Almost always",v:"D"}
+]},
+{text:"What's usually your first thought after eating a large meal?",opts:[
+{l:"A",t:"\"That was satisfying.\"",v:"A"},
+{l:"B",t:"\"I should walk a little.\"",v:"B"},
+{l:"C",t:"\"My stomach looks huge now.\"",v:"C"},
+{l:"D",t:"Guilt or panic about weight gain",v:"D"}
+]},
+{text:"How much does your belly affect your confidence?",opts:[
+{l:"A",t:"Barely at all",v:"A"},
+{l:"B",t:"Some days more than others",v:"B"},
+{l:"C",t:"It affects what I wear and how I act",v:"C"},
+{l:"D",t:"It affects my mood most days",v:"D"}
+]},
+{text:"Which statement feels most like you?",opts:[
+{l:"A",t:"I care about health more than appearance",v:"A"},
+{l:"B",t:"I want to feel more comfortable in my body",v:"B"},
+{l:"C",t:"I constantly compare my stomach to others",v:"C"},
+{l:"D",t:"My belly thoughts feel exhausting",v:"D"}
+]}
+];
+var rs={
+A:{badge:"Normal body awareness",bg:"#EAF3DE",color:"#27500A",
+title:"You have a grounded relationship with your body",
+desc:"You notice your body without letting it control your life — that's genuinely healthy. Body neutrality means your stomach doesn't need to look a certain way for you to deserve confidence, connection, or joy. Keep focusing on how your body feels and functions, not just how it looks.",
+note:"You're in a good place. Continue nourishing your body and your mindset with equal care."},
+B:{badge:"Mild self-criticism",bg:"#E6F1FB",color:"#0C447C",
+title:"You may be placing more weight on your belly than you realize",
+desc:"This is extremely common, especially with social media and constant comparison culture. A healthier goal isn't loving every inch of your body every single day — it's learning not to obsess over it. Small moments of self-criticism add up; so do small moments of self-compassion.",
+note:"Try noticing when belly-related thoughts appear and gently redirecting them. You don't have to love your body to respect it."},
+C:{badge:"Body image stress",bg:"#FAEEDA",color:"#633806",
+title:"Your belly may be affecting more than you realize",
+desc:"When belly thoughts influence what you wear, where you go, or how you carry yourself socially, that's a sign they've grown beyond healthy awareness. This doesn't mean something is wrong with you — these patterns are shaped by culture, comparison, and often years of messaging about how bodies should look.",
+note:"Body neutrality can help shift focus from appearance to function, energy, and self-respect. If this resonates, exploring it with a therapist or counsellor can be genuinely freeing."},
+D:{badge:"Worth exploring more deeply",bg:"#FAECE7",color:"#712B13",
+title:"Your relationship with your body may be emotionally draining you",
+desc:"Constant checking, avoidance, guilt, or fear around your stomach is mentally exhausting — and you don't have to keep living that way. These patterns are often deeply rooted and deserve real, compassionate attention. You are not alone in this, and it does not define your worth.",
+note:"Speaking with a trusted mental health professional or therapist could genuinely help — especially if these thoughts interfere with daily life, relationships, or your sense of self-worth. You deserve peace with your body, not constant battle."}
+};
+var cur=0,ans=new Array(qs.length).fill(null);
+function render(){
+var q=qs[cur];
+document.getElementById('biq-qnum').textContent=String(cur+1).padStart(2,'0')+' / 0'+qs.length;
+document.getElementById('biq-qtext').textContent=q.text;
+document.getElementById('biq-plabel').textContent='Question '+(cur+1)+' of '+qs.length;
+var pct=Math.round((cur/qs.length)*100);
+document.getElementById('biq-ppct').textContent=pct+'%';
+document.getElementById('biq-fill').style.width=pct+'%';
+var w=document.getElementById('biq-opts');w.innerHTML='';
+q.opts.forEach(function(o){
+var b=document.createElement('button');
+b.className='biq-opt'+(ans[cur]===o.v?' sel':'');
+b.innerHTML='<span class="biq-ltr">'+o.l+'</span><span>'+o.t+'</span>';
+b.onclick=(function(v){return function(){select(v);};})(o.v);
+w.appendChild(b);
+});
+document.getElementById('biq-back').disabled=cur===0;
+var last=cur===qs.length-1;
+var nb=document.getElementById('biq-next');
+nb.textContent=last?'See my result \u2192':'Next \u2192';
+nb.disabled=ans[cur]===null;
+dots();
+}
+function dots(){
+var w=document.getElementById('biq-dots');w.innerHTML='';
+qs.forEach(function(_,i){
+var d=document.createElement('div');
+d.className='biq-dot'+(i===cur?' active':(ans[i]!==null?' done':''));
+w.appendChild(d);
+});
+}
+function select(v){
+ans[cur]=v;
+document.querySelectorAll('.biq-opt').forEach(function(b){
+var l=b.querySelector('.biq-ltr').textContent;
+var o=qs[cur].opts.find(function(x){return x.l===l;});
+if(o&&o.v===v)b.classList.add('sel');else b.classList.remove('sel');
+});
+document.getElementById('biq-next').disabled=false;
+dots();
+}
+window.biqNext=function(){
+if(ans[cur]===null)return;
+if(cur<qs.length-1){cur++;render();}else showResult();
+};
+window.biqBack=function(){if(cur>0){cur--;render();}};
+window.biqRetake=function(){
+cur=0;ans=new Array(qs.length).fill(null);
+document.getElementById('biq-result').style.display='none';
+document.getElementById('biq-quiz').style.display='block';
+render();
+};
+function showResult(){
+var c={A:0,B:0,C:0,D:0};
+ans.forEach(function(a){if(a)c[a]++;});
+var w=Object.keys(c).reduce(function(a,b){return c[a]>=c[b]?a:b;});
+var r=rs[w];
+document.getElementById('biq-quiz').style.display='none';
+document.getElementById('biq-result').style.display='block';
+var badge=document.getElementById('biq-rbadge');
+badge.style.background=r.bg;badge.style.color=r.color;badge.textContent=r.badge;
+document.getElementById('biq-rtitle').textContent=r.title;
+document.getElementById('biq-rdesc').textContent=r.desc;
+document.getElementById('biq-rnote').textContent=r.note;
+var bw=document.getElementById('biq-bars');bw.innerHTML='';
+var bc={A:'#639922',B:'#378ADD',C:'#BA7517',D:'#D85A30'};
+var total=ans.length;
+['A','B','C','D'].forEach(function(k){
+var row=document.createElement('div');row.className='biq-bar-row';
+var pct=Math.round((c[k]/total)*100);
+row.innerHTML='<span class="biq-bar-label">'+k+'</span><div class="biq-bar-track"><div class="biq-bar-fill" style="width:'+pct+'%;background:'+bc[k]+'"></div></div><span class="biq-bar-count">'+c[k]+'</span>';
+bw.appendChild(row);
+});
+}
+render();
+})();
+</script>
+<!-- END BODY IMAGE QUIZ -->
