@@ -63,7 +63,7 @@ Women's hips are wider and the pelvis tilts differently than men's — which nat
 
 During my luteal phase, I face bloating and feel gassy. My belly appears larger and that's completely normal. I try to drink milk with a pinch of turmeric during this phase.
 
-{% include cycle-bloating-tracker.html %}
+{% include cycle-bloating-tracker-embed.html %}
 
 ### Diastasis recti and post-pregnancy changes
 
