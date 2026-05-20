@@ -3,7 +3,7 @@ layout: post
 Title: Is Your Lower Belly Pooch Affecting your Mental Health?
 date: 2026-05-08
 category: Weight Loss
-Excerpt: Is your lower belly pooch actually a problem? Science says no — and the research on what men really notice might surprise you.
+Excerpt: Is your lower belly pooch actually a problem? Solve the quiz — and the research on what men really notice might surprise you.
 ---
 
 ## Key Takeaways
@@ -12,7 +12,7 @@ Excerpt: Is your lower belly pooch actually a problem? Science says no — and t
 * No, it is not your uterus — a persistent internet myth debunked by [Dr. Karen Tang](https://www.instagram.com/reels/DQEUH8cDHh3/). It's subcutaneous fat, and that's completely fine.
 * Men notice it far less than women think — research consistently shows women are their own harshest critics — [Forbes](https://www.forbes.com/sites/margiewarrell/2025/03/08/hard-on-yourself-why-a-little-self-compassion-goes-a-long-way-for-women/).
 
----
+{% include body-image-quiz.html %}
 
 ![same-woman-different-mindset-lower-pooch-article](/assets/images/same-woman-different-mindset-lower-pooch-article.webp)
 
