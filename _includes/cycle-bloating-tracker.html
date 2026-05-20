@@ -1,0 +1,196 @@
+<!-- CYCLE PHASE BLOATING TRACKER -->
+<style>
+.ct-wrap{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:660px;margin:2rem auto;padding:0 1rem;}
+.ct-wheel-wrap{position:relative;width:260px;height:260px;margin:0 auto 1.5rem;}
+.ct-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;pointer-events:none;}
+.ct-day-num{font-size:32px;font-weight:600;color:#1a1a1a;line-height:1;}
+.ct-day-label{font-size:11px;color:#888;margin-top:4px;letter-spacing:.03em;}
+.ct-slider-row{display:flex;align-items:center;gap:12px;margin-bottom:1.25rem;}
+.ct-slider-row label{font-size:13px;color:#666;white-space:nowrap;}
+.ct-slider-row input[type=range]{flex:1;accent-color:#1a1a1a;}
+.ct-phase-badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 12px;border-radius:6px;margin-bottom:1rem;}
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1.25rem;}
+.ct-metric{background:#f8f8f8;border-radius:8px;padding:12px 14px;}
+.ct-metric-label{font-size:11px;color:#888;margin-bottom:6px;letter-spacing:.04em;text-transform:uppercase;}
+.ct-metric-val{font-size:15px;font-weight:600;color:#1a1a1a;}
+.ct-bloat-track{height:6px;background:#efefef;border-radius:999px;overflow:hidden;margin-bottom:6px;}
+.ct-bloat-fill{height:100%;border-radius:999px;transition:width .4s ease;}
+.ct-info-card{background:#fff;border:1px solid #e5e5e5;border-radius:12px;padding:1.25rem;margin-bottom:1rem;}
+.ct-section-label{font-size:11px;font-weight:600;color:#888;letter-spacing:.05em;text-transform:uppercase;margin-bottom:10px;}
+.ct-hormone-row{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+.ct-hormone-label{font-size:12px;color:#666;width:96px;flex-shrink:0;}
+.ct-hormone-track{flex:1;height:5px;background:#f0f0f0;border-radius:999px;overflow:hidden;}
+.ct-hormone-fill{height:100%;border-radius:999px;transition:width .4s ease;}
+.ct-info-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;font-size:13px;color:#555;line-height:1.6;}
+.ct-info-row:last-child{margin-bottom:0;}
+.ct-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:5px;}
+.ct-reminder{background:#f8f8f8;border-radius:8px;padding:14px;font-size:13px;color:#555;line-height:1.7;font-style:italic;margin-bottom:1.25rem;}
+.ct-day-strip{display:flex;gap:3px;margin-bottom:1.25rem;overflow:hidden;}
+.ct-day-pip{height:8px;flex:1;border-radius:2px;cursor:pointer;opacity:.45;transition:opacity .15s;}
+.ct-day-pip:hover{opacity:.75;}
+.ct-day-pip.active{opacity:1;outline:2px solid #1a1a1a;outline-offset:2px;}
+.ct-legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:1.25rem;}
+.ct-legend-item{display:flex;align-items:center;gap:6px;font-size:12px;color:#666;}
+.ct-legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+</style>
+<div class="ct-wrap" id="ct-root">
+<div class="ct-wheel-wrap">
+<canvas id="ct-canvas" width="260" height="260"></canvas>
+<div class="ct-center">
+<div class="ct-day-num" id="ct-daynum">1</div>
+<div class="ct-day-label">cycle day</div>
+</div>
+</div>
+<div class="ct-slider-row">
+<label for="ct-slider">Day</label>
+<input type="range" id="ct-slider" min="1" max="28" value="1" step="1">
+<span style="font-size:13px;font-weight:600;color:#1a1a1a;min-width:20px;text-align:right;" id="ct-sliderval">1</span>
+</div>
+<div class="ct-day-strip" id="ct-strip"></div>
+<div class="ct-legend">
+<span class="ct-legend-item"><span class="ct-legend-dot" style="background:#D4537E"></span>Menstrual</span>
+<span class="ct-legend-item"><span class="ct-legend-dot" style="background:#639922"></span>Follicular</span>
+<span class="ct-legend-item"><span class="ct-legend-dot" style="background:#378ADD"></span>Ovulation</span>
+<span class="ct-legend-item"><span class="ct-legend-dot" style="background:#BA7517"></span>Luteal</span>
+</div>
+<div id="ct-phase-badge" class="ct-phase-badge"></div>
+<div class="ct-grid">
+<div class="ct-metric">
+<div class="ct-metric-label">Bloating likelihood</div>
+<div class="ct-bloat-track"><div class="ct-bloat-fill" id="ct-bloatfill"></div></div>
+<div class="ct-metric-val" id="ct-bloatval"></div>
+</div>
+<div class="ct-metric">
+<div class="ct-metric-label">Main driver</div>
+<div class="ct-metric-val" id="ct-driver" style="font-size:13px;font-weight:500;"></div>
+</div>
+</div>
+<div class="ct-info-card">
+<p class="ct-section-label">Hormone levels today</p>
+<div class="ct-hormone-row">
+<span class="ct-hormone-label">Estrogen</span>
+<div class="ct-hormone-track"><div class="ct-hormone-fill" id="ct-estfill" style="background:#D4537E;"></div></div>
+<span style="font-size:12px;color:#666;margin-left:6px;min-width:52px;" id="ct-estlabel"></span>
+</div>
+<div class="ct-hormone-row" style="margin-bottom:0">
+<span class="ct-hormone-label">Progesterone</span>
+<div class="ct-hormone-track"><div class="ct-hormone-fill" id="ct-progfill" style="background:#7F77DD;"></div></div>
+<span style="font-size:12px;color:#666;margin-left:6px;min-width:52px;" id="ct-proglabel"></span>
+</div>
+</div>
+<div class="ct-info-card">
+<p class="ct-section-label">What may happen today</p>
+<div id="ct-symptoms"></div>
+</div>
+<div class="ct-reminder" id="ct-reminder"></div>
+<p style="font-size:11px;color:#aaa;line-height:1.6;">This tracker is educational and body-neutral. Cycle lengths vary — this assumes a 28-day cycle. It is not medical advice.</p>
+</div>
+<script>
+(function(){
+var days=[
+{phase:"Menstrual",est:5,prog:5,bloat:50,driver:"Water retention + inflammation",symptoms:["Cramps and lower belly heaviness likely","Fatigue is common today","Digestion may slow slightly"],reminder:"Your stomach may feel softer or swollen today — your body is actively shedding and recovering. That is not weight gain."},
+{phase:"Menstrual",est:5,prog:5,bloat:50,driver:"Water retention + inflammation",symptoms:["Belly may feel tender or puffy","Digestion can slow slightly","Temporary puffiness is very common"],reminder:"Temporary bloating during your period is extremely common. It will ease."},
+{phase:"Menstrual",est:15,prog:5,bloat:40,driver:"Inflammation easing",symptoms:["Estrogen slowly starts rising","Energy may begin improving","Water retention may decrease"],reminder:"Your body is gradually shifting out of menstruation mode. The heaviness should start to lift."},
+{phase:"Menstrual",est:20,prog:5,bloat:25,driver:"Hormones stabilizing",symptoms:["Belly may feel flatter","Digestion improving","Less puffiness for many people"],reminder:"Many people notice less puffiness around this point. Your body is rebalancing."},
+{phase:"Menstrual",est:30,prog:5,bloat:15,driver:"Period ending",symptoms:["Period ending for most","Estrogen rising more noticeably","Bloating often eases naturally"],reminder:"Hormonal bloating often eases naturally after menstruation ends."},
+{phase:"Follicular",est:40,prog:5,bloat:15,driver:"Rising estrogen",symptoms:["Estrogen increasing steadily","Energy rising","Belly often feels lighter"],reminder:"This phase often feels physically lighter and more energetic — hormones are working in your favour."},
+{phase:"Follicular",est:50,prog:5,bloat:15,driver:"Stable digestion",symptoms:["Stable digestion","Better insulin sensitivity","Waist may look slightly leaner"],reminder:"Not every belly change means weight gain — and the lightness you feel today is hormonal too."},
+{phase:"Follicular",est:60,prog:5,bloat:10,driver:"Estrogen supports gut",symptoms:["Estrogen supports energy and mood","Waist may appear slightly leaner","Digestion feels smooth"],reminder:"Hormones can influence how flat your stomach looks day to day. Today is a high-estrogen day."},
+{phase:"Follicular",est:70,prog:5,bloat:10,driver:"Peak energy window",symptoms:["Many people feel strongest here","Digestion tends to feel smoother","Confidence often higher"],reminder:"Your body naturally fluctuates across the month — this lighter phase is part of that normal rhythm."},
+{phase:"Follicular",est:75,prog:5,bloat:15,driver:"High estrogen",symptoms:["Higher estrogen continues","Increased confidence and energy","Digestion still smooth"],reminder:"Feeling leaner today does not mean you were doing anything wrong before — it is hormonal."},
+{phase:"Follicular",est:85,prog:10,bloat:20,driver:"Ovulation approaching",symptoms:["Ovulation approaching","Some people notice mild pelvic fullness","Slight abdominal awareness"],reminder:"A little fullness or awareness near ovulation can be purely hormonal — not fat, not failure."},
+{phase:"Follicular",est:95,prog:15,bloat:25,driver:"Estrogen peak building",symptoms:["Estrogen peaks","Cervical fluid increases","Mild abdominal sensations possible"],reminder:"Ovulation can create temporary abdominal sensations. Your belly is responding to hormones, not food."},
+{phase:"Follicular",est:98,prog:20,bloat:35,driver:"Pre-ovulation shift",symptoms:["Ovulation very close","Possible mild swelling or gas","Hormonal shifts noticeable"],reminder:"Temporary bloating around ovulation is common and hormonally driven."},
+{phase:"Ovulation",est:100,prog:30,bloat:50,driver:"Hormonal peak + water retention",symptoms:["Estrogen peaks, progesterone begins rising","Ovulation bloating possible","Increased water retention"],reminder:"Hormonal shifts at ovulation can temporarily change how your stomach feels and looks. This is your cycle working exactly as it should."},
+{phase:"Luteal",est:70,prog:45,bloat:50,driver:"Rising progesterone",symptoms:["Progesterone rising","Digestion may begin slowing","Belly may feel fuller after meals"],reminder:"Progesterone slows digestion — which can cause puffiness. Your stomach is not changing size, your gut is moving more slowly."},
+{phase:"Luteal",est:65,prog:55,bloat:50,driver:"Increased appetite + water retention",symptoms:["Increased appetite possible","Water retention starting","Body may need more energy"],reminder:"Your body may need more energy during the luteal phase. Cravings are hormonal signals, not weakness."},
+{phase:"Luteal",est:60,prog:65,bloat:55,driver:"Slower gut movement",symptoms:["Belly may feel fuller after meals","Constipation more common","Gas more likely"],reminder:"Hormonal bloating is not the same as body fat. Your clothes may feel tighter — that is water and slowed digestion."},
+{phase:"Luteal",est:55,prog:70,bloat:60,driver:"High progesterone",symptoms:["Progesterone at higher levels","Slower gut movement","Belly fullness after eating"],reminder:"Your stomach can look different across the month without any actual weight gain."},
+{phase:"Luteal",est:50,prog:75,bloat:70,driver:"PMS window beginning",symptoms:["PMS symptoms may begin","Cravings common","Water retention increases"],reminder:"Water retention can make your belly feel tighter or heavier. This is temporary and hormonal."},
+{phase:"Luteal",est:45,prog:75,bloat:75,driver:"Fluid retention peaks",symptoms:["Fluid retention increases","Digestion sluggish for many","Peak bloating window for most"],reminder:"This phase is often the peak bloating window. What you are feeling is your cycle — not a problem with you."},
+{phase:"Luteal",est:40,prog:80,bloat:80,driver:"Peak progesterone",symptoms:["Peak progesterone","Belly fullness very common","Digestion at its slowest"],reminder:"A temporarily bloated stomach is a hormonal response, not a personal failure."},
+{phase:"Luteal",est:38,prog:78,bloat:80,driver:"Salt and sugar sensitivity",symptoms:["Increased sensitivity to salt and sugar","Puffiness may increase","Mood fluctuations common"],reminder:"Your body may hold more water this week, especially if you have eaten salty foods. That is not permanent."},
+{phase:"Luteal",est:35,prog:75,bloat:78,driver:"Constipation and gas",symptoms:["Lower energy common","Constipation or gas possible","Belly may feel heavy"],reminder:"Your cycle affects digestion more than most people realize. The bloating you feel is real and hormonal."},
+{phase:"Luteal",est:32,prog:72,bloat:78,driver:"PMS symptoms stronger",symptoms:["PMS symptoms stronger","Belly may feel swollen","Emotional sensitivity rises"],reminder:"This swelling is usually temporary and will ease once your period begins."},
+{phase:"Luteal",est:28,prog:60,bloat:65,driver:"Hormones beginning to drop",symptoms:["Hormones begin dropping","Emotional sensitivity common","Bloating may start easing for some"],reminder:"Your body is preparing for another cycle. The drop in hormones will soon bring relief."},
+{phase:"Luteal",est:22,prog:45,bloat:55,driver:"Declining hormones",symptoms:["Water retention may fluctuate","Some people feel relief starting","Digestion slowly improving"],reminder:"Bloating often improves naturally once your period starts. You are close."},
+{phase:"Luteal",est:15,prog:25,bloat:55,driver:"Sharp hormone drop",symptoms:["Hormones falling sharply","Cramping may begin","Pre-period transition"],reminder:"Your body is transitioning again — fluctuation is normal and expected at this stage."},
+{phase:"Luteal",est:10,prog:10,bloat:62,driver:"Pre-period inflammation",symptoms:["Pre-period phase","Inflammation and cravings may rise","Stomach is allowed to change"],reminder:"Your stomach is allowed to change throughout your cycle. What you are experiencing right now is your cycle doing its job."}
+];
+var phaseColors={"Menstrual":"#D4537E","Follicular":"#639922","Ovulation":"#378ADD","Luteal":"#BA7517"};
+var phaseBg={"Menstrual":"#FBEAF0","Follicular":"#EAF3DE","Ovulation":"#E6F1FB","Luteal":"#FAEEDA"};
+var phaseText={"Menstrual":"#72243E","Follicular":"#27500A","Ovulation":"#0C447C","Luteal":"#633806"};
+var bloatColors=["#639922","#639922","#BA7517","#BA7517","#D85A30","#D85A30","#E24B4A","#E24B4A"];
+var bloatLabels=["Very low","Low","Mild","Mild-medium","Medium","Medium-high","High","Very high"];
+function getBloatIdx(v){if(v<=10)return 0;if(v<=20)return 1;if(v<=30)return 2;if(v<=40)return 3;if(v<=55)return 4;if(v<=65)return 5;if(v<=75)return 6;return 7;}
+function getHormoneLabel(v){if(v<=15)return "very low";if(v<=35)return "low";if(v<=55)return "moderate";if(v<=75)return "elevated";if(v<=90)return "high";return "peak";}
+function drawWheel(day){
+var canvas=document.getElementById('ct-canvas');
+var ctx=canvas.getContext('2d');
+var cx=130,cy=130,outerR=120,innerR=78;
+ctx.clearRect(0,0,260,260);
+var segA=(2*Math.PI)/28;
+var start=-Math.PI/2;
+for(var i=0;i<28;i++){
+var d=days[i];
+var sa=start+i*segA;
+var ea=sa+segA-0.015;
+var active=(i===day-1);
+ctx.beginPath();
+ctx.moveTo(cx,cy);
+ctx.arc(cx,cy,active?outerR+5:outerR,sa,ea);
+ctx.closePath();
+ctx.fillStyle=phaseColors[d.phase]+(active?'ff':'55');
+ctx.fill();
+if(active){ctx.strokeStyle=phaseColors[d.phase];ctx.lineWidth=2;ctx.stroke();}
+}
+ctx.beginPath();ctx.arc(cx,cy,innerR,0,2*Math.PI);
+ctx.fillStyle='#ffffff';ctx.fill();
+}
+function buildStrip(){
+var strip=document.getElementById('ct-strip');strip.innerHTML='';
+for(var i=0;i<28;i++){
+var pip=document.createElement('div');
+pip.className='ct-day-pip';
+pip.style.background=phaseColors[days[i].phase];
+pip.dataset.day=i+1;
+pip.title='Day '+(i+1)+' \u2014 '+days[i].phase;
+pip.onclick=(function(d){return function(){setDay(d);};})(i+1);
+strip.appendChild(pip);
+}
+}
+function setDay(day){
+var d=days[day-1];
+document.getElementById('ct-slider').value=day;
+document.getElementById('ct-sliderval').textContent=day;
+document.getElementById('ct-daynum').textContent=day;
+drawWheel(day);
+document.querySelectorAll('.ct-day-pip').forEach(function(p){p.classList.toggle('active',parseInt(p.dataset.day)===day);});
+var badge=document.getElementById('ct-phase-badge');
+badge.style.background=phaseBg[d.phase];badge.style.color=phaseText[d.phase];
+badge.textContent=d.phase+' phase \u2014 day '+day;
+var bi=getBloatIdx(d.bloat);
+document.getElementById('ct-bloatfill').style.width=d.bloat+'%';
+document.getElementById('ct-bloatfill').style.background=bloatColors[bi];
+document.getElementById('ct-bloatval').textContent=bloatLabels[bi];
+document.getElementById('ct-bloatval').style.color=bloatColors[bi];
+document.getElementById('ct-driver').textContent=d.driver;
+document.getElementById('ct-estfill').style.width=d.est+'%';
+document.getElementById('ct-progfill').style.width=d.prog+'%';
+document.getElementById('ct-estlabel').textContent=getHormoneLabel(d.est);
+document.getElementById('ct-proglabel').textContent=getHormoneLabel(d.prog);
+var symp=document.getElementById('ct-symptoms');symp.innerHTML='';
+d.symptoms.forEach(function(s){
+var row=document.createElement('div');row.className='ct-info-row';
+var dot=document.createElement('span');dot.className='ct-dot';dot.style.background=phaseColors[d.phase];
+row.appendChild(dot);
+var txt=document.createElement('span');txt.textContent=s;
+row.appendChild(txt);symp.appendChild(row);
+});
+document.getElementById('ct-reminder').textContent='\u201c'+d.reminder+'\u201d';
+}
+buildStrip();drawWheel(1);setDay(1);
+document.getElementById('ct-slider').addEventListener('input',function(){setDay(parseInt(this.value));});
+})();
+</script>
+<!-- END CYCLE BLOATING TRACKER -->
