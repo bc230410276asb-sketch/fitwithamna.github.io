@@ -63,6 +63,9 @@ Women's hips are wider and the pelvis tilts differently than men's — which nat
 
 During my luteal phase, I face bloating and feel gassy. My belly appears larger and that's completely normal. I try to drink milk with a pinch of turmeric during this phase.
 
+
+#### Why is your stomach bloated? Check your cycle day. Adjust the slider to see what estrogen and progesterone are doing to your belly today.
+
 {% include cycle-bloating-tracker-embed.html %}
 
 ### Diastasis recti and post-pregnancy changes
