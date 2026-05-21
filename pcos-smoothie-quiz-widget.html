@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>PCOS Smoothie Quiz</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:1.25rem;background:#fff;color:#1a1a1a;font-size:14px;}
+.sq-head{margin-bottom:1.5rem;}
+.sq-head h3{font-size:19px;font-weight:600;color:#1a1a1a;margin-bottom:6px;}
+.sq-head p{font-size:14px;color:#666;line-height:1.6;}
+.sq-pmeta{display:flex;justify-content:space-between;font-size:12px;color:#888;margin-bottom:6px;}
+.sq-track{height:4px;background:#efefef;border-radius:999px;overflow:hidden;margin-bottom:1.5rem;}
+.sq-fill{height:100%;background:#1a1a1a;border-radius:999px;transition:width .35s ease;}
+.sq-card{background:#fff;border:1px solid #e5e5e5;border-radius:12px;padding:1.25rem;margin-bottom:1rem;}
+.sq-qnum{font-size:12px;color:#999;margin-bottom:6px;display:block;}
+.sq-qtext{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:1rem;line-height:1.5;}
+.sq-opts{display:flex;flex-direction:column;gap:8px;}
+.sq-opt{display:flex;align-items:flex-start;gap:12px;width:100%;text-align:left;background:#f8f8f8;border:1px solid #e5e5e5;border-radius:8px;padding:10px 14px;font-size:14px;color:#1a1a1a;cursor:pointer;font-family:inherit;transition:border-color .15s,background .15s;line-height:1.5;}
+.sq-opt:hover{border-color:#bbb;background:#fff;}
+.sq-opt.sel{border-color:#1a1a1a;background:#fff;}
+.sq-num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#fff;border:1px solid #ccc;font-size:11px;font-weight:600;color:#666;flex-shrink:0;margin-top:1px;transition:background .15s,color .15s;}
+.sq-opt.sel .sq-num{background:#1a1a1a;color:#fff;border-color:#1a1a1a;}
+.sq-nav{display:flex;justify-content:space-between;align-items:center;margin-top:1rem;}
+.sq-btn{display:flex;align-items:center;gap:6px;padding:9px 18px;border-radius:8px;border:1px solid #ccc;background:transparent;color:#1a1a1a;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;transition:background .15s;}
+.sq-btn:hover{background:#f2f2f2;}
+.sq-btn.pri{background:#1a1a1a;color:#fff;border-color:#1a1a1a;}
+.sq-btn.pri:hover{opacity:.88;}
+.sq-btn:disabled{opacity:.35;cursor:not-allowed;}
+.sq-dots{display:flex;gap:5px;}
+.sq-dot{width:7px;height:7px;border-radius:50%;background:#ddd;}
+.sq-dot.active{background:#1a1a1a;}
+.sq-dot.done{background:#999;}
+.sq-result{display:none;}
+.sq-rcard{background:#fff;border:1px solid #e5e5e5;border-radius:12px;padding:1.5rem;}
+.sq-rbadge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 12px;border-radius:6px;margin-bottom:1rem;}
+.sq-rtitle{font-size:19px;font-weight:700;color:#1a1a1a;margin-bottom:8px;}
+.sq-rdesc{font-size:14px;color:#555;line-height:1.7;margin-bottom:1.25rem;}
+.sq-divider{border:none;border-top:1px solid #eee;margin:1.25rem 0;}
+.sq-slabel{font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;}
+.sq-ingr{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.25rem;}
+.sq-pill{font-size:12px;font-weight:600;padding:4px 10px;border-radius:6px;}
+.sq-benefit{font-size:13px;color:#555;line-height:1.7;margin-bottom:1.25rem;}
+.sq-bars{display:flex;flex-direction:column;gap:6px;margin-bottom:1.25rem;}
+.sq-brow{display:flex;align-items:center;gap:10px;font-size:12px;color:#666;}
+.sq-btrack{flex:1;height:5px;background:#f0f0f0;border-radius:999px;overflow:hidden;}
+.sq-bfill{height:100%;border-radius:999px;transition:width .5s ease;}
+.sq-bcount{font-weight:600;color:#1a1a1a;min-width:14px;text-align:right;}
+</style>
+</head>
+<body>
+<div id="sq-quiz">
+<div class="sq-head">
+<h3>&#127821; Which PCOS smoothie is right for your body?</h3>
+<p>7 questions based on your real symptoms. No guessing — just the smoothie your body is actually asking for.</p>
+</div>
+<div class="sq-pmeta">
+<span id="sq-plabel">Question 1 of 7</span>
+<span id="sq-ppct">0%</span>
+</div>
+<div class="sq-track"><div class="sq-fill" id="sq-fill" style="width:0%"></div></div>
+<div class="sq-card">
+<span class="sq-qnum" id="sq-qnum">01 / 07</span>
+<p class="sq-qtext" id="sq-qtext"></p>
+<div class="sq-opts" id="sq-opts"></div>
+</div>
+<div class="sq-nav">
+<button class="sq-btn" id="sq-back" onclick="sqBack()" disabled>&#8592; Back</button>
+<div class="sq-dots" id="sq-dots"></div>
+<button class="sq-btn pri" id="sq-next" onclick="sqNext()" disabled>Next &#8594;</button>
+</div>
+</div>
+<div class="sq-result" id="sq-result">
+<div class="sq-rcard">
+<div class="sq-rbadge" id="sq-rbadge"></div>
+<h3 class="sq-rtitle" id="sq-rtitle"></h3>
+<div class="sq-bars" id="sq-bars"></div>
+<p class="sq-rdesc" id="sq-rdesc"></p>
+<hr class="sq-divider">
+<p class="sq-slabel">Best ingredients for you</p>
+<div class="sq-ingr" id="sq-ingr"></div>
+<p class="sq-slabel">Why this works for you</p>
+<p class="sq-benefit" id="sq-benefit"></p>
+<button class="sq-btn" onclick="sqRetake()">&#8635; Retake quiz</button>
+</div>
+</div>
+<script>
+(function(){
+var qs=[
+{text:"What frustrates you the most right now?",opts:[
+{t:"My lower belly fat never goes away",v:1},
+{t:"I feel tired all the time",v:2},
+{t:"I crave sugar or carbs constantly",v:3},
+{t:"I feel bloated even after eating healthy",v:4},
+{t:"My periods leave me exhausted or inflamed",v:5}
+]},
+{text:"What usually happens after breakfast?",opts:[
+{t:"I get hungry again within 1-2 hours",v:3},
+{t:"I crash and feel sleepy",v:2},
+{t:"I still crave something sweet",v:3},
+{t:"I feel puffy or bloated",v:4},
+{t:"I usually skip breakfast completely",v:5}
+]},
+{text:"Which sentence sounds most like you?",opts:[
+{t:"I feel like my body stores everything in my stomach.",v:1},
+{t:"I am always fighting cravings.",v:3},
+{t:"Healthy smoothies never keep me full.",v:1},
+{t:"I feel inflamed and swollen most days.",v:4},
+{t:"My energy disappears halfway through the day.",v:5}
+]},
+{text:"What is your biggest PCOS goal?",opts:[
+{t:"Lose stubborn belly fat",v:1},
+{t:"Balance my hormones naturally",v:2},
+{t:"Stop blood sugar crashes",v:3},
+{t:"Reduce bloating and inflammation",v:4},
+{t:"Feel full and energized longer",v:5}
+]},
+{text:"Which ingredients sound most comforting right now?",opts:[
+{t:"Peanut butter + cacao",v:1},
+{t:"Blueberries + flaxseed",v:2},
+{t:"Spinach + avocado",v:3},
+{t:"Cinnamon + protein",v:5},
+{t:"Ginger + turmeric",v:4}
+]},
+{text:"How do commercial smoothies usually make you feel?",opts:[
+{t:"Hungry again fast",v:1},
+{t:"Bloated",v:4},
+{t:"Shaky or jittery",v:3},
+{t:"Sleepy afterward",v:2},
+{t:"They do not satisfy me at all",v:5}
+]},
+{text:"Which symptom hits hardest during stressful weeks?",opts:[
+{t:"Belly fat feels worse",v:1},
+{t:"Cravings get out of control",v:3},
+{t:"My digestion slows down",v:4},
+{t:"I feel inflamed or puffy",v:4},
+{t:"My energy completely crashes",v:5}
+]}
+];
+var rs={
+1:{label:"High-protein belly fat smoothie",bg:"#E6F1FB",color:"#0C447C",pb:"#B5D4F4",pc:"#0C447C",
+title:"Your body needs more protein and blood sugar stability",
+desc:"Your symptoms point to a body storing fat in response to blood sugar swings and insufficient satiety. More protein and healthy fat at breakfast can change how your whole day feels — fewer cravings, less belly storage, more control.",
+ingr:["Chia seeds","Protein powder","Almond butter","Berries","Cinnamon","Flaxseed"],
+benefit:"High-protein smoothies help stabilize insulin — the hormone most linked to stubborn belly fat in PCOS. Adding fiber slows glucose absorption and keeps you full far longer than a fruit-heavy blend."},
+2:{label:"Hormone-balancing smoothie",bg:"#EAF3DE",color:"#27500A",pb:"#C0DD97",pc:"#27500A",
+title:"Your body is asking for hormone and cortisol support",
+desc:"Your symptoms suggest hormone fluctuations, elevated cortisol, and insulin imbalance working together. Anti-inflammatory, hormone-supportive ingredients can help your body shift out of fight-or-flight mode and back into balance.",
+ingr:["Flaxseed","Avocado","Maca","Leafy greens","Turmeric","Blueberries"],
+benefit:"Flaxseed supports estrogen metabolism. Maca is an adaptogen that may help modulate cortisol. Leafy greens provide magnesium — one of the most depleted nutrients in women with PCOS."},
+3:{label:"Cravings-control smoothie",bg:"#FAEEDA",color:"#633806",pb:"#FAC775",pc:"#633806",
+title:"Your cravings are hormonal — not a willpower problem",
+desc:"For many women with PCOS, cravings are deeply connected to insulin resistance and unstable glucose levels. Your body is not failing — it is signaling. The right smoothie can interrupt that cycle at the source.",
+ingr:["Protein powder","Cacao","Cinnamon","Nut butter","Chia seeds","Oats"],
+benefit:"Cinnamon has been shown to improve insulin sensitivity in PCOS. Cacao provides magnesium and mood support. Protein and fat together blunt the glucose spike that drives cravings 90 minutes after eating."},
+4:{label:"Anti-bloating PCOS smoothie",bg:"#FBEAF0",color:"#72243E",pb:"#F4C0D1",pc:"#72243E",
+title:"Your gut is reacting to inflammation, not just food",
+desc:"Your body may be reacting to chronic low-grade inflammation, stress, or blood sugar spikes — all common in PCOS. The bloating you feel after eating healthy is often a gut and hormonal response, not a sign you ate something wrong.",
+ingr:["Cucumber","Mint","Ginger","Spinach","Lemon","Fennel"],
+benefit:"Ginger is one of the most studied anti-inflammatory foods for gut health. Cucumber and mint reduce gas and water retention. Spinach provides iron — often depleted in women with heavy PCOS periods."},
+5:{label:"PCOS energy + recovery smoothie",bg:"#EEEDFE",color:"#3C3489",pb:"#CECBF6",pc:"#3C3489",
+title:"Your body needs nourishment, not restriction",
+desc:"Many women with PCOS under-eat protein or rely on high-sugar smoothies — both of which can worsen fatigue and stress hormones. Your body is asking to be fed, not managed.",
+ingr:["Protein powder","Cacao","Berries","Healthy fats","Turmeric","Collagen"],
+benefit:"Under-eating raises cortisol, which worsens PCOS symptoms. A protein-rich recovery smoothie eaten consistently in the morning can lower cortisol, improve energy, and reduce the inflammatory load that drains you."}
+};
+var cur=0,ans=new Array(qs.length).fill(null);
+function render(){
+var q=qs[cur];
+document.getElementById('sq-qnum').textContent=String(cur+1).padStart(2,'0')+' / 0'+qs.length;
+document.getElementById('sq-qtext').textContent=q.text;
+document.getElementById('sq-plabel').textContent='Question '+(cur+1)+' of '+qs.length;
+var pct=Math.round((cur/qs.length)*100);
+document.getElementById('sq-ppct').textContent=pct+'%';
+document.getElementById('sq-fill').style.width=pct+'%';
+var w=document.getElementById('sq-opts');w.innerHTML='';
+q.opts.forEach(function(o,i){
+var b=document.createElement('button');
+b.className='sq-opt'+(ans[cur]===i?' sel':'');
+b.innerHTML='<span class="sq-num">'+(i+1)+'</span><span>'+o.t+'</span>';
+b.onclick=(function(idx){return function(){pick(idx);};})(i);
+w.appendChild(b);
+});
+document.getElementById('sq-back').disabled=cur===0;
+var last=cur===qs.length-1;
+var nb=document.getElementById('sq-next');
+nb.textContent=last?'See my result \u2192':'Next \u2192';
+nb.disabled=ans[cur]===null;
+dots();
+}
+function dots(){
+var w=document.getElementById('sq-dots');w.innerHTML='';
+qs.forEach(function(_,i){
+var d=document.createElement('div');
+d.className='sq-dot'+(i===cur?' active':(ans[i]!==null?' done':''));
+w.appendChild(d);
+});
+}
+function pick(idx){
+ans[cur]=idx;
+document.querySelectorAll('.sq-opt').forEach(function(b,i){b.classList.toggle('sel',i===idx);});
+document.getElementById('sq-next').disabled=false;
+dots();
+}
+window.sqNext=function(){
+if(ans[cur]===null)return;
+if(cur<qs.length-1){cur++;render();}else showResult();
+};
+window.sqBack=function(){if(cur>0){cur--;render();}};
+window.sqRetake=function(){
+cur=0;ans=new Array(qs.length).fill(null);
+document.getElementById('sq-result').style.display='none';
+document.getElementById('sq-quiz').style.display='block';
+render();
+};
+function showResult(){
+var c={1:0,2:0,3:0,4:0,5:0};
+ans.forEach(function(ai,qi){if(ai!==null){var v=qs[qi].opts[ai].v;c[v]++;}});
+var w=Object.keys(c).reduce(function(a,b){return c[a]>=c[b]?a:b;});
+var r=rs[parseInt(w)];
+document.getElementById('sq-quiz').style.display='none';
+document.getElementById('sq-result').style.display='block';
+var badge=document.getElementById('sq-rbadge');
+badge.style.background=r.bg;badge.style.color=r.color;
+badge.textContent='\ud83e\udd64 '+r.label;
+document.getElementById('sq-rtitle').textContent=r.title;
+document.getElementById('sq-rdesc').textContent=r.desc;
+var bw=document.getElementById('sq-bars');bw.innerHTML='';
+var nm={1:'Belly fat',2:'Hormones',3:'Cravings',4:'Bloating',5:'Energy'};
+var bc={1:'#185FA5',2:'#3B6D11',3:'#854F0B',4:'#993556',5:'#3C3489'};
+var total=qs.length;
+[1,2,3,4,5].forEach(function(k){
+var row=document.createElement('div');row.className='sq-brow';
+var pct=Math.round((c[k]/total)*100);
+row.innerHTML='<span style="min-width:68px;">'+nm[k]+'</span><div class="sq-btrack"><div class="sq-bfill" style="width:'+pct+'%;background:'+bc[k]+'"></div></div><span class="sq-bcount">'+c[k]+'</span>';
+bw.appendChild(row);
+});
+var iw=document.getElementById('sq-ingr');iw.innerHTML='';
+r.ingr.forEach(function(ing){
+var p=document.createElement('span');p.className='sq-pill';
+p.style.background=r.pb;p.style.color=r.pc;p.textContent=ing;iw.appendChild(p);
+});
+document.getElementById('sq-benefit').textContent=r.benefit;
+}
+render();
+})();
+</script>
+</body>
+</html>
