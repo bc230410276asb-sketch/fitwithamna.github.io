@@ -123,31 +123,10 @@ Focus on protein-forward breakfasts (eggs, Greek yogurt, nuts), balanced dinners
 
 ---
 
-## PCOS Belly Fat Reduction Exercises — What Actually Moves the Needle
-
-Here's where most advice gets it backward. We're told to do more cardio to lose fat. But for PCOS, endless cardio can actually backfire — it raises cortisol, which raises insulin, which tells your body to hold onto belly fat. Not the goal.
-
-The research is pretty clear: **strength training is the most effective exercise for PCOS-related fat loss.** A 2020 meta-analysis in the *Journal of Functional Morphology and Kinesiology* found that resistance training improved insulin sensitivity, reduced testosterone levels, and improved body composition in women with PCOS — [more effectively than cardio alone](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7739243/).
-
-### What to Do
-
-**Strength training 2–3 times per week:** compound movements like squats, deadlifts, lunges, push-ups, and rows are your best friends. Building muscle increases glucose uptake independent of insulin. [Growwithjo](https://youtu.be/SFrZ-0A7Ps4?si=ALtbzhUJHN_C3zhJ) is the one I rely on — she makes the workouts enjoyable and exciting.
-
-**Walking — don't underestimate it:** a 20–30 minute walk after meals is one of the most effective ways to blunt post-meal blood sugar spikes. It's low cortisol, sustainable, and surprisingly effective.
+Pairing your PCOS diet with the right kind of movement can significantly accelerate results. If you want to build a routine that works alongside your nutrition, the specific [pcos belly fat exercises](https://fitwithamna.me/best-exercises-for-pcos-belly-fat-for-beginners/) are a solid place to start.
 
 ![6-7k-steps-daily-for-pcos](/assets/images/6-7k-steps-daily-for-pcos.webp)
 
-**Yoga and Pilates:** both reduce cortisol and support hormonal balance. A [2022 study in the Journal of Education and Health Promotion](https://www.researchgate.net/publication/388484540_The_Role_of_Yoga_in_Balancing_Hormones_A_Comprehensive_Research_Review) found yoga specifically improved PCOS symptoms including hormonal markers and psychological wellbeing. [Move With Nicole](https://youtu.be/KmB6Fdj_XJg?si=cBlZO4So4oT4FhuK) is my favourite yoga instructor.
-
-**HIIT in moderation:** short, intense intervals (like 20 minutes, twice a week max) can improve insulin sensitivity, but overdoing it raises cortisol. Keep it brief. [Growingannanas](https://youtu.be/KmB6Fdj_XJg?si=cBlZO4So4oT4FhuK) is your buddy for this.
-
-### What to Avoid
-
-* Long daily cardio sessions (running for 60+ minutes daily raises cortisol significantly)
-* Overtraining — rest days are metabolically necessary, not a luxury
-* Exercising fasted if it stresses you out — some women do well with fasted workouts, others don't. If you feel anxious or dizzy, eat something first.
-
-The general guideline from the [American College of Sports Medicine](https://acsm.org/physical-activity-guidelines-faqs/) is 150 minutes of moderate activity per week — but for PCOS, the quality and type of exercise matters more than hitting a number.
 
 ---
 
