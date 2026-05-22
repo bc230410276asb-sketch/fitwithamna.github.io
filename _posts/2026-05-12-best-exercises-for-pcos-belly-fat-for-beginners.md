@@ -39,21 +39,13 @@ I've been there. All of it. And I've also lost over 30 kilograms on the other si
 
 ## How Does Exercise Actually Help With PCOS Belly Fat?
 
-Before we talk about *which* exercises, we need to talk about *why* PCOS belly fat exists in the first place — because if you understand the root cause, the solution makes so much more sense.
-
-PCOS belly fat isn't just regular fat. A significant portion of it is **visceral fat** — the deep fat that sits *inside* your abdomen, wrapping around your organs rather than sitting just under the skin.
-
-Unlike the soft, pinchable [subcutaneous fat](https://fitwithamna.me/how-to-get-rid-of-female-subcutaneous-fat/) on your hips and thighs, visceral fat is metabolically active. It produces inflammatory chemicals. It worsens insulin resistance. It drives androgen production.
-
-And it creates a vicious cycle: more androgens → more visceral fat → worse insulin resistance → more androgens. ([Cleveland Clinic](https://my.clevelandclinic.org/health/diseases/24147-visceral-fat))
-
-Exercise breaks this cycle in three very specific ways:
+Exercise helps in three very specific ways:
 
 **It improves insulin sensitivity.** When your muscles contract during exercise — especially strength training — they pull glucose out of your bloodstream directly, without needing insulin to do it. Over time, this lowers the chronically elevated insulin levels that signal your body to store fat in your abdomen. ([Healthline](https://www.healthline.com/health/womens-health/exercise-for-pcos))
 
 **It reduces cortisol — when done at the right intensity.** This is where most generic fitness advice goes wrong for women with PCOS. High-intensity, high-stress workouts spike cortisol. And high cortisol tells your body to store fat abdominally, disrupt your cycle, and worsen PCOS symptoms. The right exercises *lower* cortisol. The wrong ones raise it. We'll get into exactly which is which below.
 
-**It builds muscle mass.** Muscle tissue is metabolically hungry — it consumes glucose just by existing. Women with PCOS tend to have lower lean muscle mass, which slows metabolism and makes fat loss feel impossible. Even a modest increase in muscle fundamentally changes how your body handles blood sugar and fat storage. ([PCOS Personal Trainer](https://pcospersonaltrainer.com/articles/whats-the-best-type-of-exercise-for-pcos-and-what-to-avoid/))
+**It builds muscle mass.** Muscle tissue is metabolically hungry — it consumes glucose just by existing. Women with PCOS tend to have lower lean muscle mass, which slows metabolism and makes fat loss feel impossible. Even a modest increase in muscle fundamentally changes how your body handles blood sugar and fat storage. ([PCOS Personal Trainer](https://pcospersonaltrainer.com/articles/whats-the-best-type-of-exercise-for-pcos-and-what-to-avoid/))/
 
 The lifestyle piece matters enormously too. Sleep deprivation raises cortisol and worsens insulin resistance. I used to sleep for 3 hours, then I had to pay for the consequences.
 
@@ -95,17 +87,9 @@ I started with [Roberta](https://www.youtube.com/watch?v=BwI4KgJ57mY&pp=ygUfYm9k
 
 ### 3. Yoga or Pilates — 1 to 2 Times Per Week
 
-I want you to stop thinking of this as the "easy" option. For women with PCOS, yoga is medicine.
+I want you to stop thinking of this as the "easy" option. For women with PCOS, [yoga](https://fitwithamna.me/yoga-for-pcos-belly-fat-and-weightloss-for-beginners/) is medicine.
 
-Chronic stress keeps cortisol elevated, which keeps belly fat stubbornly in place. A 2021 study in the *Journal of Alternative and Complementary Medicine* found that a 12-week yoga intervention in women with PCOS significantly reduced cortisol levels, improved menstrual regularity, and lowered anxiety scores. ([Aster DM Healthcare](https://www.asterdmhealthcare.com/health-library/the-best-types-of-exercise-to-fight-pcos))
-
-Pilates specifically targets the transverse abdominis — the deep core muscles that sit directly beneath PCOS belly bloat. You won't see a dramatic visual change immediately, but the tightness and puffiness reduce noticeably within a few weeks.
-
-**For beginners:** Yin Yoga or Restorative Yoga for cortisol reduction. Pilates mat work for core activation. Even 20 minutes has a measurable effect. YouTube channels like [Yoga with Adriene](https://www.youtube.com/watch?v=JsE4csvlUfA&pp=ygUXeW9nYSB3aXRoIGFkcmllbmUgcGNvcyA%3D) have free PCOS-specific sessions that are genuinely excellent.
-
-I didn't know about pilates during the start of my journey, but was very much aware of yoga. I used to do yoga as a post-workout activity. [Indian yogas](https://www.youtube.com/watch?v=FdyhENXyIQ4&pp=ygUZaW5kaWFuIHlvZ2EgZm9yIGJlZ2lubmVycw%3D%3D) are my fav.
-
-Now, I also do pilates and follow [Lily Sabri](https://www.youtube.com/watch?v=G16eeqO2U7g&t=9s&pp=ygUQNSBtaW51dGUgcGlsYXRlcw%3D%3D). Her pilates are quick and easy.
+[Pilates](https://fitwithamna.me/best-pilates-for-pcos-belly-fat-and-weightloss-for-beginners/) specifically targets the transverse abdominis — the deep core muscles that sit directly beneath PCOS belly bloat. You won't see a dramatic visual change immediately, but the tightness and puffiness reduce noticeably within a few weeks.
 
 ---
 
@@ -154,11 +138,7 @@ The belly you're frustrated with right now is not a character flaw. It is not la
 
 Exercise — the right kind, at the right intensity, done consistently — changes that. Not overnight. Not in two weeks. But in a way that is real, measurable, and cumulative. Energy comes back first. Bloating softens. Sleep improves. The scale eventually follows — but by that point, you'll already feel different in your body, and that matters more.
 
-Start with the walk. Tomorrow morning, after breakfast. Just 25 minutes. That's it.
-
-Everything else builds from there. And I will be here every step of the way.
-
-You've got this. I genuinely, wholeheartedly believe that. 🌸
+Start with the walk. Tomorrow morning, after breakfast. Just 25 minutes. That's it. Everything else builds from there. And I will be here every step of the way.You've got this. I genuinely, wholeheartedly believe that. 🌸
 
 ---
 
