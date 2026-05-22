@@ -132,13 +132,7 @@ Pairing your PCOS diet with the right kind of movement can significantly acceler
 
 ## Conclusion
 
-PCOS belly is real, it's specific, and it responds to a very specific set of interventions. This isn't about eating less and moving more — that approach misses the entire hormonal picture. What actually works is:
-
-* A low-glycemic, anti-inflammatory diet that keeps insulin stable
-* Strength training as your primary exercise mode
-* Stress management — not optional, actually metabolic
-* Sleep of 7–9 hours — poor sleep increases cortisol and insulin resistance within days
-* Patience — this is a hormonal condition, and hormonal shifts take weeks to months, not days
+PCOS belly is real, it's specific, and it responds to a very specific set of interventions. This isn't about eating less and moving more — that approach misses the entire hormonal picture.
 
 I want to be honest with you: some women also need medical support. Metformin, inositol supplementation, or hormonal therapy can all be part of the picture, and there's no shame in that. If you've been doing everything "right" for months and nothing is shifting, please talk to an endocrinologist, not just a general practitioner. You deserve a doctor who takes this seriously.
 
