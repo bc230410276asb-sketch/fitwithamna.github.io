@@ -150,16 +150,16 @@ You are not failing. You are fighting a hormonal condition with incomplete infor
 
 ### What happens to the body with PCOS?
 
-PCOS disrupts the normal hormonal cycle that governs ovulation. The ovaries produce excess androgens (male hormones), which interferes with egg development and release. This creates a cascading effect: irregular or absent periods, cyst formation on the ovaries, insulin resistance, inflammation, and a higher risk of metabolic conditions like type 2 diabetes, cardiovascular disease, and non-alcoholic fatty liver disease. Symptoms vary enormously between women — some have all of them, some have only a few. The condition is also closely linked to thyroid dysfunction and adrenal irregularities.
+The ovaries produce excess androgens (male hormones), which interferes with egg development and release. This creates a cascading effect: irregular or absent periods, cyst formation on the ovaries, insulin resistance, inflammation, and a higher risk of metabolic conditions like type 2 diabetes, cardiovascular disease, and non-alcoholic fatty liver disease.
 
 ### What is the 30 30 30 rule for PCOS?
 
-The 30-30-30 rule has gained traction on social media and was popularized by health educator Gary Brecka. It involves: 30 grams of protein within 30 minutes of waking up, followed by 30 minutes of low-intensity movement (like walking). The idea is to stabilize blood sugar and cortisol from the moment you start your day. While there's no PCOS-specific clinical trial on this exact protocol, it aligns well with established research on the benefits of high-protein breakfasts for insulin management and morning exercise for blood sugar regulation. For PCOS, it's worth trying — it's low-risk and biologically sound.
+It involves: 30 grams of protein within 30 minutes of waking up, followed by 30 minutes of low-intensity movement (like walking). The idea is to stabilize blood sugar and cortisol from the moment you start your day. While there's no PCOS-specific clinical trial on this exact protocol, it aligns well with established research on the benefits of high-protein breakfasts for insulin management and morning exercise for blood sugar regulation. 
 
 ### What is the first stage of PCOS?
 
-PCOS doesn't have formally staged progressions the way some conditions do, but early signs often include irregular periods (or periods that were regular and become irregular), mild hormonal symptoms like acne or excess hair growth, and subtle metabolic changes detectable on bloodwork (elevated androgens, slightly elevated insulin). Many women first notice something is off in their teens or early twenties. Early intervention — especially lifestyle-based — is genuinely impactful and can prevent the condition from worsening.
+PCOS doesn't have formally staged progressions the way some conditions do, but early signs often include irregular periods (or periods that were regular and become irregular), mild hormonal symptoms like acne or excess hair growth, and subtle metabolic changes detectable on bloodwork (elevated androgens, slightly elevated insulin).
 
 ### Are you 100% infertile with PCOS?
 
-No — absolutely not. PCOS is one of the most common causes of infertility, but **"common cause" does not mean "guaranteed infertility."** Many women with PCOS conceive naturally, and many more conceive with relatively minimal intervention such as lifestyle changes, ovulation induction medications (like letrozole or clomiphene), or IVF. A [2020 review in Frontiers in Endocrinology](https://www.frontiersin.org/articles/10.3389/fendo.2019.00943/full) notes that with appropriate management, the majority of women with PCOS who want to conceive are able to do so. Please don't let fear about fertility stop you from getting a diagnosis — knowing is always better than not knowing.
+No — absolutely not. PCOS is one of the most common causes of infertility, but **"common cause" does not mean "guaranteed infertility."** Many women with PCOS conceive naturally, and many more conceive with relatively minimal intervention such as lifestyle changes, ovulation induction medications (like letrozole or clomiphene), or IVF. 
