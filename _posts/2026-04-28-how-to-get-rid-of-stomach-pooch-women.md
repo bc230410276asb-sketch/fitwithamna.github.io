@@ -184,29 +184,6 @@ No [drink burns belly fat](https://fitwithamna.me/what-drinks-burn-belly-fat-in-
 ![drinks-that-burn-belly-fat-fast](/assets/images/drinks-that-burn-belly-fat-fast.webp)
 *Drinks that burn belly fat fast*
 
-
----
-
-## What Causes a Pooch Belly in Females?
-
-The lower belly pooch in women is usually subcutaneous fat — the soft, pinchable kind that sits just beneath the skin.
-
-Subcutaneous fat is directly influenced by estrogen, and your body has biological reasons for putting it there.
-
-Estrogen (primarily female sex hormone) directs fat storage toward the hips, thighs, and lower abdomen during your reproductive years as an energy reserve.
-
-When estrogen levels drop — during perimenopause, after childbirth, or due to hormonal imbalances — fat redistribution accelerates toward the lower belly specifically.
-
-A 2012 review in [Obesity Reviews](https://pubmed.ncbi.nlm.nih.gov/22281161/) confirmed that sex hormones are primary regulators of where women store fat regionally, and that declining estrogen is directly linked to abdominal fat accumulation — even in women who have not changed their diet or exercise habits at all.
-
-But here is where it gets more complicated for many women: what looks like a belly fat problem is not always a belly fat problem. Sometimes it is a structural problem — like diastasis recti (ab muscle separation after pregnancy), a pelvic floor dysfunction, chronic bloating from gut issues, or even postural imbalances that push the lower abdomen forward. This is why two women with similar body fat percentages can look completely different from the side.
-
-> "I'm slightly above average height, weigh about 105 lbs, eat extremely strictly to prevent inflammation, and I still have a lower stomach that always bulges out slightly. I look toned from the front but almost like I have a baby bump from the side. I saw the SI Swim Week runway show and people significantly larger than me had flat stomachs. I genuinely don't understand what the secret is."
-
-The answer in cases like this is often not fat at all. Organ positioning, pelvic tilt, gut microbiome issues, food intolerances, ovarian cysts, and fascial tension can all create a persistent lower abdominal protrusion that no amount of calorie restriction touches. More on this below.
-
-Additional evidence-backed causes include chronically elevated cortisol from stress, insufficient or disrupted sleep, poor gut microbiome diversity, and a sedentary lifestyle that weakens the deep core muscles responsible for holding everything in.
-
 ---
 
 ## [Two Types of Belly Fat](https://fitwithamna.me/types-of-belly-fat-female/): What You Are Actually Dealing With
