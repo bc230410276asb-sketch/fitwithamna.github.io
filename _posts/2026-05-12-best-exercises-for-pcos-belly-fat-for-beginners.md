@@ -85,15 +85,7 @@ I started with [Roberta](https://www.youtube.com/watch?v=BwI4KgJ57mY&pp=ygUfYm9k
 
 ---
 
-### 3. Yoga or Pilates — 1 to 2 Times Per Week
-
-I want you to stop thinking of this as the "easy" option. For women with PCOS, [yoga](https://fitwithamna.me/yoga-for-pcos-belly-fat-and-weightloss-for-beginners/) is medicine.
-
-[Pilates](https://fitwithamna.me/best-pilates-for-pcos-belly-fat-and-weightloss-for-beginners/) specifically targets the transverse abdominis — the deep core muscles that sit directly beneath PCOS belly bloat. You won't see a dramatic visual change immediately, but the tightness and puffiness reduce noticeably within a few weeks.
-
----
-
-### 4. Low-Impact Cardio — 1 to 2 Times Per Week
+### 3. Low-Impact Cardio — 1 to 2 Times Per Week
 
 Cycling (stationary or outdoors) and swimming are your best friends on active recovery days. Steady-state cardio at moderate intensity improves cardiovascular health — which is a real and underacknowledged PCOS concern, given that the condition increases long-term risk of metabolic syndrome and heart disease. ([AQF Sports](https://uk.aqfsports.com/blogs/workout/21-exercises-for-women-with-pcos))
 
@@ -103,7 +95,7 @@ Cycling (stationary or outdoors) and swimming are your best friends on active re
 
 ---
 
-### 5. Modified HIIT — Once Per Week Maximum
+### 4. Modified HIIT — Once Per Week Maximum
 
 This one needs an honest conversation, because there's a real debate in the PCOS community about it — and both sides are right.
 
