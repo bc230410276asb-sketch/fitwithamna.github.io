@@ -17,22 +17,12 @@ Excerpt: The fitness industry told PCOS women to work harder. It was wrong. Try 
 
 
 The fitness industry lied to us.
+Work harder. Sweat more. Push through it. So we did — bloated, exhausted, cortisol spiking — and our bellies stayed exactly where they were. That's not a willpower problem. That's an anatomy problem nobody explained.
 
-They said work harder. Sweat more. Push through it. So we did — bloated, exhausted, running on three hours of sleep and a cortisol spike disguised as motivation. We showed up. We tried. And our bellies stayed exactly where they were.
+PCOS belly fat is [visceral](https://fitwithamna.me/how-to-get-rid-of-female-visceral-fat/) — deep inside the abdominal cavity, pushed forward by inflammation and hormonal dysfunction. Crunches don't touch it. Because the muscle actually responsible for pulling that belly in — your transverse abdominis — was never being trained at all.
 
-That's not a willpower problem. That's a setup.
-
-Nobody told us that every brutal workout we pushed through was flooding our already-stressed PCOS bodies with cortisol — the exact hormone that locks fat in our belly and throws away the key.
-
-Nobody told us the reformer machines, the matching sets, the "no excuses" culture — none of it was built for a body fighting insulin resistance before breakfast.
-
-I know because I was that girl. Doing everything they said. Getting none of what they promised.
-
-What actually moved the needle for me — after 30 kilograms and years of figuring this out the hard way — was quieter than anything the industry wanted to sell me. A mat. A floor. Fifteen minutes of movement that worked *with* my hormones instead of declaring war on them.
-
-That's what this is. No machines. No studio. No performance.
-
-Just the truth they forgot to tell you.
+Pilates trains exactly that. Every controlled contraction, every deliberate exhale compresses visceral fat inward and rebuilds the deep core structure that PCOS breaks down.
+After 30 kilograms and years of trial and error, this is what actually worked. Precise over punishing. That's what this is.
 
 ---
 
