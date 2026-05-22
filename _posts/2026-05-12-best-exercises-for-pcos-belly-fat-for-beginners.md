@@ -146,11 +146,11 @@ Start with the walk. Tomorrow morning, after breakfast. Just 25 minutes. That's 
 
 ### What exercises should women with PCOS avoid?
 
-Avoid doing high-intensity training *too frequently* — daily HIIT, twice-a-day sessions, or combining intense cardio with chronic calorie restriction. These keep cortisol elevated and can worsen PCOS symptoms rather than improve them. Also avoid training in a completely fasted state for long sessions if it leaves you shaky, anxious, or lightheaded. Rest days are not optional — they are when your hormonal repair actually happens.
+Avoid doing high-intensity training *too frequently* — daily HIIT, twice-a-day sessions, or combining intense cardio with chronic calorie restriction. Also avoid training in a completely fasted state for long sessions if it leaves you shaky, anxious, or lightheaded. Rest days are not optional — they are when your hormonal repair actually happens.
 
 ### Can exercise help PCOS go away?
 
-PCOS doesn't disappear, but consistent exercise can send it into what many women describe as remission. Research shows exercise restores menstrual regularity, reduces androgen levels, improves fertility markers, and lowers the long-term metabolic risks associated with PCOS. A 2020 Cochrane review found exercise improved menstrual frequency and hormonal markers in women with PCOS independent of weight loss. ([Healthline](https://www.healthline.com/health/womens-health/exercise-for-pcos)) The symptoms that once ruled your life genuinely become manageable — and for many women, barely noticeable.
+PCOS doesn't disappear, but consistent exercise can send it into what many women describe as remission. Research shows exercise restores menstrual regularity, reduces androgen levels, improves fertility markers, and lowers the long-term metabolic risks associated with PCOS. 
 
 ### When is the best time to workout with PCOS?
 
@@ -158,11 +158,11 @@ Morning tends to work best for most women with PCOS. Cortisol is naturally highe
 
 ### Should I eat before or after a workout with PCOS?
 
-Eat something before, especially for sessions longer than 30 minutes. A light snack with protein and carbohydrates — a banana with nut butter, a boiled egg, Greek yogurt — 30–45 minutes before training helps stabilize blood sugar and prevents a cortisol spike from hunger. After your workout, prioritise protein within 30 minutes: eggs, chicken, lentils, Greek yogurt, or a protein shake. This is your muscle repair window, and it matters more than most people realise. ([Aspect Health](https://www.aspect-health.com/blog/pcos-workout-plan-effective-exercises-for-managing-symptoms-and-weight-loss))
+Eat something before, especially for sessions longer than 30 minutes. A light snack with protein and carbohydrates — a banana with nut butter, a boiled egg, Greek yogurt — 30–45 minutes before training helps stabilize blood sugar and prevents a cortisol spike from hunger. After your workout, prioritise protein within 30 minutes: eggs, chicken, lentils, Greek yogurt, or a protein shake.
 
 ### How soon can exercise show results with PCOS?
 
-Expect to feel the changes before you see them. Energy and mood tend to improve within 2–3 weeks of consistent movement. Bloating and puffiness often reduce within 4 weeks. Visible body composition changes take 8–12 weeks of sustained effort. Hormonal improvements — more regular cycles, reduced androgen symptoms like hair loss and acne — typically take 3–6 months. Track energy, sleep, and mood first. These are your early indicators that your hormones are shifting, and they will keep you going until the mirror catches up. ([PCOS Personal Trainer](https://pcospersonaltrainer.com/articles/exercise-plan-for-beginners/))
+Expect to feel the changes before you see them. Energy and mood tend to improve within 2–3 weeks of consistent movement. Bloating and puffiness often reduce within 4 weeks. Visible body composition changes take 8–12 weeks of sustained effort. Hormonal improvements — more regular cycles, reduced androgen symptoms like hair loss and acne — typically take 3–6 months. Track energy, sleep, and mood first. 
 
 ---
 
