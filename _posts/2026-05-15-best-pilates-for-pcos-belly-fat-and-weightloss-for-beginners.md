@@ -48,8 +48,6 @@ I know some of you have already tried Pilates and felt like "this is too gentle,
 
 ![best-pilates-for-pcos-belly-at-home-for-beginners](/assets/images/best-pilates-for-pcos-belly-at-home-for-beginners.webp)
 
-If you want a deeper look at how [visceral fat](https://fitwithamna.me/how-to-get-rid-of-female-visceral-fat/) specifically affects women's health, [Mayo Clinic's guide](https://www.mayoclinic.org/healthy-lifestyle/womens-health/in-depth/belly-fat/art-20045809) is one of the clearest explanations I've come across.
-
 ---
 
 ## Best Beginner Pilates for PCOS Belly: Where to Actually Start
@@ -143,15 +141,15 @@ You've got this. I'm rooting for you. 💛
 
 ### Can you lose weight by doing Pilates with PCOS?
 
-Yes. Pilates improves insulin sensitivity, which is often impaired in women with PCOS and is a primary driver of weight gain and difficulty losing fat. It also lowers cortisol, which otherwise promotes abdominal fat storage. [Medical News Today](https://www.medicalnewstoday.com/articles/320929) notes that regular moderate exercise significantly improves hormonal markers in PCOS. Weight loss may be slower than it is for women without PCOS, but Pilates supports the hormonal environment needed for it to happen.
+Yes. Pilates improves insulin sensitivity, which is often impaired in women with PCOS and is a primary driver of weight gain and difficulty losing fat. It also lowers cortisol, which otherwise promotes abdominal fat storage.
 
 ### What type of Pilates is best for PCOS?
 
-Mat Pilates is the most accessible and effective starting point for women with PCOS. It focuses on deep core engagement, breathwork, and controlled movement — all of which address the root hormonal drivers of PCOS belly fat. As you progress, slow-weighted Pilates (light resistance, long holds) adds metabolic benefit without high cortisol output.
+Mat Pilates is the most accessible and effective starting point for women with PCOS. It focuses on deep core engagement, breathwork, and controlled movement — all of which address the root hormonal drivers of PCOS belly fat.
 
 ### What is better for PCOS, Pilates or the gym?
 
-Neither is objectively "better" — the best exercise is the one you'll actually do consistently. That said, Pilates has a specific advantage for PCOS: it's intentionally low-cortisol. Heavy lifting and high-intensity gym sessions can spike cortisol, which worsens PCOS symptoms. Many women find Pilates easier to maintain emotionally and physically, especially when starting out. If you love the gym, strength training in a controlled, low-intensity format can absolutely work alongside Pilates.
+Neither is objectively "better" — the best exercise is the one you'll actually do consistently. That said, Pilates has a specific advantage for PCOS: it's intentionally low-cortisol. Heavy lifting and high-intensity gym sessions can spike cortisol, which worsens PCOS symptoms.
 
 ### How many times a week should I do Pilates with PCOS?
 
@@ -163,4 +161,4 @@ Pilates can visibly reduce belly size through a combination of strengthening the
 
 ### Is Pilates good for hormonal imbalance?
 
-Yes. Pilates supports hormonal balance through two key mechanisms: it reduces cortisol via parasympathetic activation (breathwork and slow movement), and it improves insulin sensitivity via muscle engagement. For PCOS specifically — which is fundamentally a hormonal condition — this dual action makes Pilates one of the most aligned forms of exercise available. [Prevention](https://www.prevention.com/weight-loss/g20438900/hormones-causing-your-belly-fat/) has a solid overview of how hormones like cortisol and estrogen drive belly fat in women, which helps explain why Pilates targets the right levers.
+Yes. Pilates supports hormonal balance through two key mechanisms: it reduces cortisol via parasympathetic activation (breathwork and slow movement), and it improves insulin sensitivity via muscle engagement. For PCOS specifically — which is fundamentally a hormonal condition — this dual action makes Pilates one of the most aligned forms of exercise available.
