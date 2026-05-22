@@ -18,7 +18,9 @@ Excerpt: Not seeing results with PCOS workouts? Try these easy yoga poses to red
 
 ## I Was Doing Everything "Right" — And Still Getting Worse
 
-If your joints ache, your cortisol is through the roof, and every high-intensity workout leaves you more exhausted than empowered — yoga might be the missing piece in your [PCOS belly fat](https://fitwithamna.me/how-to-get-rid-of-pcos-belly/) journey. Unlike cardio that spikes the very stress hormones driving your weight gain, yoga works with your hormones, lowering cortisol, improving insulin sensitivity, and targeting the root of why PCOS belly fat is so stubborn in the first place.
+In PCOS, your nervous system is stuck in a state of chronic overdrive — the HPA axis keeps pumping out cortisol, insulin climbs in response, and your body parks fat exactly where you least want it: your [belly](https://fitwithamna.me/how-to-get-rid-of-pcos-belly/). 
+
+Most workouts make this worse, not better. Yoga is one of the few forms of movement that directly interrupts this cycle by activating the parasympathetic nervous system — shifting your body out of fight-or-flight and into the hormonal environment where fat loss, cycle regulation, and real recovery can actually happen. If every intense workout has left you more inflamed, exhausted, and stuck, your body wasn't failing you — it was asking for something different. 
 
 ---
 
