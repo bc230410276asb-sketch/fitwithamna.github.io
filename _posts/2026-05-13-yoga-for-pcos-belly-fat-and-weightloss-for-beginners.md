@@ -18,17 +18,7 @@ Excerpt: Not seeing results with PCOS workouts? Try these easy yoga poses to red
 
 ## I Was Doing Everything "Right" — And Still Getting Worse
 
-I was bleeding continuously for 6 months. Sounds like hell? Yeah, it was.
-
-I've been overweight since my teens. I was binge eating and studying, moving through life on autopilot. When the bleeding started, somehow it felt normal — injections every other day, drips, medicines, the whole parade. I was ashamed of my body in the way only someone who has been judged by their own doctors can understand. Some gynecologists declared a miscarriage before they even took me for an ultrasound.
-
-Sounds crazy? I was just an innocent girl with a food addiction. Until one day, I decided to dig up the cause — and found out I had PCOS.
-
-Everyone talks about the "classic" [PCOS](https://fitwithamna.me/how-to-get-rid-of-pcos-belly/) symptoms: hair growth, missed periods, headaches. But my symptom was continuous bleeding. That's what most of us aren't told — PCOS is wildly different for every woman, and the internet barely covers half of it.
-
-When I was working through my exercise plan (which I covered in my previous article on [exercises for PCOS belly fat](https://fitwithamna.me/best-exercises-for-pcos-belly-fat-for-beginners/)), intense workouts were genuinely rough on me. Being significantly overweight, my joints hurt, my cortisol spiked, and the scale barely moved — sometimes it went up.
-
-High-impact cardio can raise cortisol in women with PCOS, which increases abdominal fat storage. I needed something different. That's how I found yoga — and why I haven't looked back.
+If your joints ache, your cortisol is through the roof, and every high-intensity workout leaves you more exhausted than empowered — yoga might be the missing piece in your [PCOS belly fat](https://fitwithamna.me/how-to-get-rid-of-pcos-belly/) journey. Unlike cardio that spikes the very stress hormones driving your weight gain, yoga works with your hormones, lowering cortisol, improving insulin sensitivity, and targeting the root of why PCOS belly fat is so stubborn in the first place.
 
 ---
 
@@ -254,15 +244,11 @@ Hatha yoga is best for beginners, while a combination of Hatha and Vinyasa works
 
 ### Which is better for PCOD — gym or yoga?
 
-Both have their place, but for many women with PCOS, yoga outperforms the gym — especially in the beginning. High-intensity gym workouts can spike cortisol, which worsens insulin resistance and abdominal fat in PCOS. Yoga lowers cortisol, balances hormones, and improves metabolic function without the inflammatory stress response. That said, combining yoga with light strength training (2x per week) is arguably the most effective long-term strategy.
+Both have their place, but for many women with PCOS, yoga outperforms the gym — especially in the beginning. High-intensity gym workouts can spike cortisol, which worsens insulin resistance and abdominal fat in PCOS. Yoga lowers cortisol, balances hormones, and improves metabolic function without the inflammatory stress response.
 
 ### Can PCOD be cured permanently by yoga?
 
-PCOS cannot be "cured" in the pharmaceutical sense — it's a lifelong condition. But it can be managed so effectively that symptoms become minimal or even disappear. Several women achieve regular cycles, healthy weight, and successful pregnancies through lifestyle intervention alone — yoga being a central part of that. Consistent yoga practice over 6–12 months has been shown to significantly reduce androgen levels, improve insulin sensitivity, and restore menstrual regularity.
-
-### What style of yoga is best for PCOS?
-
-Hatha yoga is the best starting point for PCOS — it's accessible, calming, and hormonally supportive. Yin yoga is deeply therapeutic for nervous system regulation. As you build strength and stamina, Vinyasa can be incorporated for metabolic benefits. Avoid aggressive Ashtanga or hot yoga in the early stages, especially if stress and cortisol are already high.
+PCOD cannot be "cured" in the pharmaceutical sense — it's a lifelong condition. But it can be managed so effectively that symptoms become minimal or even disappear. Several women achieve regular cycles, healthy weight, and successful pregnancies through lifestyle intervention alone — yoga being a central part of that.
 
 ---
 
