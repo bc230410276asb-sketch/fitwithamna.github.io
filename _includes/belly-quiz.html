@@ -1,6 +1,4 @@
-
-cat > /mnt/user-data/outputs/belly-type-quiz-updated.html << 'ENDOFFILE'
-<!-- BELLY TYPE QUIZ — updated to match 8-type article -->
+<!-- BELLY TYPE QUIZ v2 -->
 <style>
 .btq-wrap *{box-sizing:border-box;margin:0;padding:0;}
 .btq-wrap{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:640px;margin:2rem auto;padding:0 1rem;}
@@ -40,217 +38,296 @@ cat > /mnt/user-data/outputs/belly-type-quiz-updated.html << 'ENDOFFILE'
 .btq-cta{font-size:13px;color:#555;border-top:1px solid #eee;padding-top:1rem;line-height:1.6;}
 .btq-retake{margin-top:1rem;}
 </style>
-
 <div class="btq-wrap" id="btq-root">
 <div id="btq-quiz">
-  <div class="btq-header">
-    <h3>&#128269; What's actually going on with your belly?</h3>
-    <p>Answer 7 quick questions and we'll tell you which type matches your pattern — so you stop chasing the wrong fix.</p>
-  </div>
-  <div class="btq-progress-meta">
-    <span id="btq-prog-label">Question 1 of 7</span>
-    <span id="btq-prog-pct">0%</span>
-  </div>
-  <div class="btq-track"><div class="btq-fill" id="btq-fill" style="width:0%"></div></div>
-  <div class="btq-card">
-    <span class="btq-qnum" id="btq-qnum">01 / 07</span>
-    <p class="btq-qtext" id="btq-qtext"></p>
-    <div class="btq-options" id="btq-opts"></div>
-  </div>
-  <div class="btq-nav">
-    <button class="btq-btn" id="btq-back" onclick="btqBack()" disabled>&#8592; Back</button>
-    <div class="btq-dots" id="btq-dots"></div>
-    <button class="btq-btn primary" id="btq-next" onclick="btqNext()" disabled>Next &#8594;</button>
-  </div>
+<div class="btq-header">
+<h3>&#128269; Which belly type are you?</h3>
+<p>Answer 7 quick questions to find out what's actually going on with your belly — because not all of it is fat, and the fix depends entirely on the type.</p>
+</div>
+<div class="btq-progress-meta">
+<span id="btq-prog-label">Question 1 of 7</span>
+<span id="btq-prog-pct">0%</span>
+</div>
+<div class="btq-track"><div class="btq-fill" id="btq-fill" style="width:0%"></div></div>
+<div class="btq-card">
+<span class="btq-qnum" id="btq-qnum">01 / 07</span>
+<p class="btq-qtext" id="btq-qtext"></p>
+<div class="btq-options" id="btq-opts"></div>
+</div>
+<div class="btq-nav">
+<button class="btq-btn" id="btq-back" onclick="btqBack()" disabled>&#8592; Back</button>
+<div class="btq-dots" id="btq-dots"></div>
+<button class="btq-btn primary" id="btq-next" onclick="btqNext()" disabled>Next &#8594;</button>
+</div>
 </div>
 <div class="btq-result" id="btq-result">
-  <div class="btq-rcard">
-    <div class="btq-badge" id="btq-rbadge"></div>
-    <h3 class="btq-rtitle" id="btq-rtitle"></h3>
-    <p class="btq-rdesc" id="btq-rdesc"></p>
-    <div class="btq-traits" id="btq-rtraits"></div>
-    <p class="btq-cta" id="btq-rcta"></p>
-    <button class="btq-btn btq-retake" onclick="btqRetake()">&#8635; Retake quiz</button>
-  </div>
+<div class="btq-rcard">
+<div class="btq-badge" id="btq-rbadge"></div>
+<h3 class="btq-rtitle" id="btq-rtitle"></h3>
+<p class="btq-rdesc" id="btq-rdesc"></p>
+<div class="btq-traits" id="btq-rtraits"></div>
+<p class="btq-cta" id="btq-rcta"></p>
+<button class="btq-btn btq-retake" onclick="btqRetake()">&#8635; Retake quiz</button>
 </div>
 </div>
-
-{% raw %}
+</div>
 <script>
 (function(){
-
 var qs=[
-  {text:"When you touch your lower belly, how does it feel?",opts:[
-    {l:"A",t:"Soft and pinchable — I can grab a handful easily",v:"SUB"},
-    {l:"B",t:"Firm and tight, even when I haven't eaten much",v:"VIS"},
-    {l:"C",t:"Mostly fine but puffed up and tender sometimes",v:"BLO"},
-    {l:"D",t:"Hard to tell — it changes day to day",v:"WAT"}
-  ]},
-  {text:"What time of day does your belly look biggest?",opts:[
-    {l:"A",t:"Pretty consistent — same morning and night",v:"SUB"},
-    {l:"B",t:"Always there, doesn't really change with meals",v:"VIS"},
-    {l:"C",t:"Way bigger by evening, especially after eating",v:"BLO"},
-    {l:"D",t:"Bigger the week before my period, then calms down",v:"WAT"}
-  ]},
-  {text:"Does your belly change with your menstrual cycle?",opts:[
-    {l:"A",t:"Not really — stays the same regardless of my cycle",v:"SUB"},
-    {l:"B",t:"Not cycle-related, it's just always there",v:"VIS"},
-    {l:"C",t:"Yes, way more bloated and gassy around my period",v:"BLO"},
-    {l:"D",t:"Yes — noticeably bigger the week before, then eases up",v:"WAT"}
-  ]},
-  {text:"Does your belly look bigger when you slouch or sit for a long time?",opts:[
-    {l:"A",t:"Not really, looks the same whether I sit or stand",v:"SUB"},
-    {l:"B",t:"Sticks out more when I sit but feels firm regardless",v:"VIS"},
-    {l:"C",t:"Bigger after sitting — especially after lunch at my desk",v:"POS"},
-    {l:"D",t:"Yes — when I stand tall and brace, it flattens noticeably",v:"POS"}
-  ]},
-  {text:"Have you had a baby in the last few years?",opts:[
-    {l:"A",t:"No, never been pregnant",v:"SUB"},
-    {l:"B",t:"Yes, and my belly has never fully gone back",v:"DIA"},
-    {l:"C",t:"Yes — I notice a ridge or dome along my midline",v:"DIA"},
-    {l:"D",t:"Yes, but my belly looks normal to me",v:"SUB"}
-  ]},
-  {text:"Which sounds most like your situation?",opts:[
-    {l:"A",t:"I've had this belly shape since my teens, even at my lightest",v:"NOR"},
-    {l:"B",t:"I track food and work out but the lower belly won't budge",v:"SUB"},
-    {l:"C",t:"My belly swelled over a few months and came with other symptoms",v:"MED"},
-    {l:"D",t:"I feel like stress and sleep are making my belly worse",v:"VIS"}
-  ]},
-  {text:"Do you experience any of these alongside your belly changes?",opts:[
-    {l:"A",t:"Irregular periods, acne, or unusual hair changes",v:"MED"},
-    {l:"B",t:"Pelvic pain, painful periods, or a feeling of pressure",v:"MED"},
-    {l:"C",t:"Neither — just the belly, no other symptoms",v:"SUB"},
-    {l:"D",t:"Chronic stress, poor sleep, and fatigue most of the time",v:"VIS"}
-  ]}
+{
+text:"How does your belly feel when you touch it?",
+opts:[
+{l:"A",t:"Soft and pinchable — I can grab a good handful",v:"SUB"},
+{l:"B",t:"Firm and tight, even when I'm not particularly overweight",v:"VIS"},
+{l:"C",t:"It varies — sometimes soft, sometimes puffy and distended",v:"BLO"},
+{l:"D",t:"There's a distinct pooch below my belly button that feels soft",v:"DIA"}
+]
+},
+{
+text:"When is your belly at its biggest?",
+opts:[
+{l:"A",t:"Pretty consistent throughout the day — doesn't change much",v:"SUB"},
+{l:"B",t:"Always there, and doesn't deflate even by morning",v:"VIS"},
+{l:"C",t:"Flat in the morning, noticeably bigger by evening",v:"BLO"},
+{l:"D",t:"The week before my period — then it calms down after",v:"WAT"}
+]
+},
+{
+text:"Have you noticed your belly change around your menstrual cycle?",
+opts:[
+{l:"A",t:"Not really — it stays about the same all month",v:"SUB"},
+{l:"B",t:"Yes, it gets noticeably bigger and heavier before my period",v:"WAT"},
+{l:"C",t:"It bloats more mid-cycle or before my period, then settles",v:"BLO"},
+{l:"D",t:"My cycle is irregular, and my belly sometimes swells with pelvic pain",v:"MED"}
+]
+},
+{
+text:"What happens to your belly when you stand up straight and gently brace your core?",
+opts:[
+{l:"A",t:"It visibly flattens — quite a lot, actually",v:"POS"},
+{l:"B",t:"It flattens a little but the lower pooch stays",v:"DIA"},
+{l:"C",t:"Not much changes — it looks the same either way",v:"SUB"},
+{l:"D",t:"It's firm and round regardless of how I stand",v:"VIS"}
+]
+},
+{
+text:"Have you been pregnant, or had a baby in the last few years?",
+opts:[
+{l:"A",t:"Yes, and my lower belly still pooches out no matter what I do",v:"DIA"},
+{l:"B",t:"Yes, but my belly feels pretty normal and consistent now",v:"SUB"},
+{l:"C",t:"No — this belly has been with me long before any pregnancy",v:"SUB"},
+{l:"D",t:"No, but I have ongoing pelvic pain, irregular periods, or bloating that won't quit",v:"MED"}
+]
+},
+{
+text:"How would you describe your stress levels and sleep?",
+opts:[
+{l:"A",t:"Pretty balanced — moderate stress, decent sleep most nights",v:"SUB"},
+{l:"B",t:"High stress, often poor sleep, mind that won't switch off",v:"VIS"},
+{l:"C",t:"Stress tends to show up as digestive issues — bloating, cramps, upset stomach",v:"BLO"},
+{l:"D",t:"My belly issues don't seem linked to stress at all",v:"NOR"}
+]
+},
+{
+text:"Which of these sounds most like you at your leanest or healthiest weight?",
+opts:[
+{l:"A",t:"There was still a small lower-belly curve — it's just always been there",v:"NOR"},
+{l:"B",t:"My belly was flatter, but stress or bad sleep always brings the puffiness back",v:"VIS"},
+{l:"C",t:"I was slimmer overall but the lower pooch stuck around",v:"DIA"},
+{l:"D",t:"My stomach looked fine until my cycle or certain foods triggered bloating",v:"WAT"}
+]
+}
 ];
 
 var rs={
-  SUB:{badge:"Subcutaneous fat pattern",bg:"#E6F1FB",color:"#0C447C",
-    title:"Your belly is most likely subcutaneous fat",
-    desc:"This is the soft, pinchable layer just under the skin — and in women, it's largely driven by estrogen and normal reproductive biology. It's not the dangerous kind. It's stubborn, yes, but it's the type your body is designed to hold onto during your childbearing years.",
-    traits:["Soft and even — you can grab it between your fingers","Doesn't change much morning to evening or cycle to cycle","Common in women regardless of overall weight or fitness level","Less health-risky than it looks — but responds to the right approach"],
-    cta:"Scroll up to the subcutaneous fat section to understand exactly what's happening in your body — and why the approach most women try doesn't match this type."},
-  VIS:{badge:"Visceral / stress belly pattern",bg:"#FAECE7",color:"#712B13",
-    title:"Your belly may be visceral or stress-driven",
-    desc:"Visceral fat sits deep around your organs, not just under the skin. It often feels firm, doesn't pinch much, and tends to get worse with high stress and poor sleep — because your abdominal fat cells carry more cortisol receptors than anywhere else on your body.",
-    traits:["Feels firmer and tighter rather than soft and doughy","Often linked to chronic stress, poor sleep, or high cortisol","May be present even if you're not significantly overweight","Waist over 35 inches is a useful screening clue"],
-    cta:"Read the visceral fat and stress belly sections above — they explain exactly why working harder can sometimes make this type worse, not better."},
-  BLO:{badge:"Bloating / digestive pattern",bg:"#FAEEDA",color:"#633806",
-    title:"Your belly is likely driven by bloating",
-    desc:"Bloating can make your stomach look significantly bigger within a few hours — without any fat being gained at all. It's gas and fluid buildup in your digestive system, and in women it's often connected to hormone shifts, food sensitivities, or IBS.",
-    traits:["Belly changes significantly throughout the day","Worse after certain meals, stress, or around your period","Often flat in the morning and distended by evening","Not a fat issue — which means fat-loss strategies won't fix it"],
-    cta:"The bloating section in this article breaks down exactly how to tell this apart from actual fat — and why it matters before you change anything else."},
-  WAT:{badge:"Hormonal water retention pattern",bg:"#EAF3DE",color:"#27500A",
-    title:"Your belly may be hormonal water retention",
-    desc:"If your belly swells noticeably before your period and eases off after, that's fluid — not fat. Women can retain up to a pound of water during their cycle, and it tends to show up most in the belly and face.",
-    traits:["Belly is noticeably bigger in the days before your period","Calms down on its own after your period starts","Feels puffy or tender rather than firm","Often comes with breast tenderness or mood changes too"],
-    cta:"The hormonal water retention section above explains the cycle behind this — worth reading before you assume it's a fat-loss problem."},
-  POS:{badge:"Posture-related pattern",bg:"#F3EEFF",color:"#4A1E8C",
-    title:"Your belly may be posture-related",
-    desc:"A forward pelvic tilt and a relaxed core can push your stomach outward even when your body fat hasn't changed at all. Long desk days, tight hip flexors, and a weak deep core are usually behind it.",
-    traits:["Belly looks bigger when you sit or slouch","Visibly flattens when you stand tall and brace gently","Often comes with lower back tension or tight hips","Common in desk workers and new moms — not a fat issue"],
-    cta:"Scroll to the posture section above — there's a quick standing test that can tell you in about 10 seconds whether this is part of your pattern."},
-  DIA:{badge:"Diastasis recti pattern",bg:"#FFF0F0",color:"#7C1D1D",
-    title:"Your belly may involve diastasis recti",
-    desc:"Diastasis recti is a separation of the abdominal muscles along the midline that commonly happens during pregnancy. It can cause a persistent lower belly bulge or a ridge that domes up when you do any core movement — and no amount of crunches will fix it until the separation is addressed.",
-    traits:["A gap or ridge you can feel along your midline","Belly domes or protrudes when you sit up or do core work","Appeared or worsened after pregnancy","Unrelated to how much fat you have — it's structural"],
-    cta:"The diastasis recti section above includes a simple self-check you can do at home right now — start there before doing any core training."},
-  NOR:{badge:"Normal female anatomy",bg:"#F5F5F5",color:"#444444",
-    title:"Your belly may just be your normal shape",
-    desc:"For many women, a slight lower-belly curve is just how they're built. Female pelvic anatomy and natural fat distribution create that contour — and it's been there since you were healthy and lean because it's supposed to be.",
-    traits:["Present since your teens or early adult years, even at your lightest","Doesn't change with cycles, meals, or stress","Soft and consistent — not a sign of anything being wrong","Social media has set a flat-stomach standard most bodies aren't built to meet"],
-    cta:"The normal female anatomy section in this article says what most fitness content won't — sometimes there's nothing to fix. Worth a read."},
-  MED:{badge:"Possible medical pattern",bg:"#FFF8E6",color:"#7A4A00",
-    title:"Your belly changes may need medical attention",
-    desc:"Some belly changes aren't a fat or fitness issue — they're symptoms. PCOS, endometriosis, fibroids, ovarian cysts, and thyroid conditions can all change how your abdomen looks and feels, and they often get missed because everyone assumes belly means diet harder.",
-    traits:["Came with irregular periods, pain, or other body changes","Appeared or worsened relatively quickly","May include pelvic pressure, bloating, or unusual discharge","Won't respond to diet or exercise changes alone"],
-    cta:"Please read the medical conditions section in this article and speak with your doctor before changing your diet or exercise routine — this pattern deserves proper evaluation first."}
+SUB:{
+badge:"Subcutaneous belly fat",bg:"#E6F1FB",color:"#0C447C",
+title:"Your belly is most likely subcutaneous fat",
+desc:"This is the soft, pinchable layer that sits just under the skin — the kind most of us are actually dealing with. It's stubborn, but it's also less medically risky than the type that sits deeper. The reason it's frustrating is that general advice rarely accounts for how female bodies actually store fat, or why.",
+traits:[
+"Soft and even — you can grab it between your fingers",
+"Doesn't fluctuate much morning to evening",
+"More common in women, especially during childbearing years — it's partly by design",
+"Takes longer to shift than visceral fat, but absolutely responds to the right approach"
+],
+cta:"<strong>Read more:</strong> Scroll up to the subcutaneous fat section of this article — it covers exactly why your body stores fat this way and what's actually worth doing about it."
+},
+VIS:{
+badge:"Visceral / stress belly pattern",bg:"#FAECE7",color:"#712B13",
+title:"Your pattern points to visceral or stress-related belly fat",
+desc:"Visceral fat sits deep in the abdominal cavity — around your organs, not under your skin. It often feels firm, doesn't pinch much, and can show up even when you're otherwise a healthy weight. Chronic stress and poor sleep are major drivers, because abdominal fat cells carry more cortisol receptors than anywhere else on the body.",
+traits:[
+"Belly feels firm or rounded rather than soft and doughy",
+"Doesn't change much with food or the time of day",
+"High stress, poor sleep, or a busy-mind lifestyle are often part of the picture",
+"Waist over 35 inches is one of the key screening markers doctors use"
+],
+cta:"<strong>Read more:</strong> Scroll up to the visceral fat and stress belly sections — they go into what's actually driving this pattern and why pushing harder often makes it worse."
+},
+BLO:{
+badge:"Bloating / gut-driven belly",bg:"#FAEEDA",color:"#633806",
+title:"Your belly may not be fat at all — it looks more like bloating",
+desc:"If your stomach is flat in the morning and visibly bigger by evening, that's not fat accumulating through the day — fat doesn't work that way. This is digestive buildup, gas, or gut inflammation doing the talking. Stress, certain foods, IBS, and hormone shifts can all trigger it, and no amount of calorie-cutting will touch it.",
+traits:[
+"Flat in the morning, bigger by evening — sometimes dramatically so",
+"Worse after certain meals, high-sodium foods, or a stressful day",
+"Often comes with bloating, gas, or general abdominal discomfort",
+"Can look identical to fat gain — but responds to completely different interventions"
+],
+cta:"<strong>Read more:</strong> Scroll up to the bloating section of this article — it covers the difference between a fat problem and a gut problem, and why they need different approaches."
+},
+WAT:{
+badge:"Hormonal water retention",bg:"#F0EAF8",color:"#4A1D7C",
+title:"Your belly is likely hormonal water retention, not fat",
+desc:"If your belly reliably swells the week before your period and then settles down after, that's your cycle — not your body composition changing. Research shows women retain roughly half a kilogram of fluid across the menstrual cycle, peaking around the period. Your jeans fitting differently depending on the week is real, documented, and not something you're imagining.",
+traits:[
+"Belly is noticeably bigger in the days before your period",
+"Returns to normal after your period arrives — reliable pattern",
+"Feels puffy or heavy rather than firm",
+"Not a fat-loss problem — it's a hormonal fluid shift"
+],
+cta:"<strong>Read more:</strong> Scroll up to the hormonal water retention section — it explains exactly why this happens and how to tell it apart from actual fat gain."
+},
+POS:{
+badge:"Posture-related belly protrusion",bg:"#E8F5EE",color:"#1A5C35",
+title:"Posture might be doing more of the talking than fat",
+desc:"When your pelvis tilts forward and your core relaxes — which happens naturally after hours at a desk — your stomach can push outward significantly, even when nothing about your body fat has changed. If it visibly flattened when you stood tall and braced your core, that's posture, not fat.",
+traits:[
+"Belly noticeably flattens when you stand tall and engage your core",
+"Gets more pronounced after long days of sitting or screens",
+"Not a body composition issue — it's a structural one",
+"Common in desk workers, and very fixable with the right approach"
+],
+cta:"<strong>Read more:</strong> Scroll up to the posture section of this article — it covers why this happens and how much of a difference posture actually makes to your belly's appearance."
+},
+DIA:{
+badge:"Possible diastasis recti pattern",bg:"#FEF3E2",color:"#7A4100",
+title:"Your belly may be pointing to diastasis recti",
+desc:"If you've had a pregnancy and your lower belly still pooches out despite your best efforts — especially if it domes or bulges when you do crunches — this might be why. Diastasis recti is a separation of the abdominal muscles along the midline. It's a structural change, not a fat problem, which is why traditional core exercises can sometimes make it worse rather than better.",
+traits:[
+"Persistent lower pooch that doesn't respond to typical core work",
+"May see a doming or ridge along the midline when you crunch or sit up",
+"Common after pregnancy — but often goes undiagnosed",
+"Crunches and sit-ups may be the wrong move until the separation is assessed"
+],
+cta:"<strong>Read more:</strong> Scroll up to the diastasis recti section of this article — it includes a simple self-check you can do right now, and explains why this needs a different approach entirely."
+},
+NOR:{
+badge:"Normal female anatomy",bg:"#F0F4F0",color:"#2D4A2D",
+title:"That lower curve might just be you — and that's okay",
+desc:"A small lower-belly curve is part of normal female anatomy for a lot of us. Pelvic shape, natural fat distribution, and the way female bodies are built can create that slight contour even at your leanest, healthiest weight. A large part of why it doesn't feel \"normal\" is that the bodies we see online aren't representative of how most of us are actually built.",
+traits:[
+"Has been there at every weight you've ever been",
+"Soft, not firm — doesn't feel like a problem from the inside",
+"Doesn't change with your cycle or with food",
+"May simply be your shape — not a fat issue, not a health issue"
+],
+cta:"<strong>Read more:</strong> Scroll up to the normal anatomy section of this article — it's worth reading before deciding this is something that needs fixing."
+},
+MED:{
+badge:"Worth a medical conversation",bg:"#FCE8E8",color:"#7C1A1A",
+title:"Your pattern has some flags worth checking out",
+desc:"Some of what you described — irregular periods, pelvic pain, sudden swelling, or ongoing bloating that doesn't respond to anything — can be signs of conditions like PCOS, endometriosis, fibroids, or ovarian cysts. These are common, they're treatable, and they regularly get missed because everyone (including us) assumes belly changes are always a diet problem.",
+traits:[
+"Belly changes that came with pain, pelvic pressure, or irregular periods",
+"Swelling that feels different from normal bloating — or came on suddenly",
+"Digestive symptoms that have never fully resolved",
+"These patterns deserve a doctor's input before a fitness plan"
+],
+cta:"<strong>Read more:</strong> Scroll up to the medical conditions section of this article — and if any of those symptoms sound familiar, please make that a doctor conversation, not another round of dietary changes."
+}
 };
 
 var cur=0,ans=new Array(qs.length).fill(null);
+var TOTAL=qs.length;
 
 function render(){
-  var q=qs[cur];
-  document.getElementById('btq-qnum').textContent=String(cur+1).padStart(2,'0')+' / 0'+qs.length;
-  document.getElementById('btq-qtext').textContent=q.text;
-  document.getElementById('btq-prog-label').textContent='Question '+(cur+1)+' of '+qs.length;
-  var pct=Math.round((cur/qs.length)*100);
-  document.getElementById('btq-prog-pct').textContent=pct+'%';
-  document.getElementById('btq-fill').style.width=pct+'%';
-  var w=document.getElementById('btq-opts');w.innerHTML='';
-  q.opts.forEach(function(o){
-    var b=document.createElement('button');
-    b.className='btq-opt'+(ans[cur]===o.v?' selected':'');
-    b.innerHTML='<span class="btq-letter">'+o.l+'</span><span>'+o.t+'</span>';
-    b.onclick=(function(v){return function(){select(v);};})(o.v);
-    w.appendChild(b);
-  });
-  document.getElementById('btq-back').disabled=cur===0;
-  var last=cur===qs.length-1;
-  var nb=document.getElementById('btq-next');
-  nb.textContent=last?'See my result \u2192':'Next \u2192';
-  nb.disabled=ans[cur]===null;
-  renderDots();
+var q=qs[cur];
+document.getElementById('btq-qnum').textContent=String(cur+1).padStart(2,'0')+' / 0'+TOTAL;
+document.getElementById('btq-qtext').textContent=q.text;
+document.getElementById('btq-prog-label').textContent='Question '+(cur+1)+' of '+TOTAL;
+var pct=Math.round((cur/TOTAL)*100);
+document.getElementById('btq-prog-pct').textContent=pct+'%';
+document.getElementById('btq-fill').style.width=pct+'%';
+var w=document.getElementById('btq-opts');w.innerHTML='';
+q.opts.forEach(function(o){
+var b=document.createElement('button');
+b.className='btq-opt'+(ans[cur]===o.v?' selected':'');
+b.innerHTML='<span class="btq-letter">'+o.l+'</span><span>'+o.t+'</span>';
+b.onclick=(function(v){return function(){select(v);};})(o.v);
+w.appendChild(b);
+});
+document.getElementById('btq-back').disabled=cur===0;
+var last=cur===TOTAL-1;
+var nb=document.getElementById('btq-next');
+nb.textContent=last?'See my result \u2192':'Next \u2192';
+nb.disabled=ans[cur]===null;
+renderDots();
 }
 
 function renderDots(){
-  var w=document.getElementById('btq-dots');w.innerHTML='';
-  qs.forEach(function(_,i){
-    var d=document.createElement('div');
-    d.className='btq-dot'+(i===cur?' active':(ans[i]!==null?' done':''));
-    w.appendChild(d);
-  });
+var w=document.getElementById('btq-dots');w.innerHTML='';
+qs.forEach(function(_,i){
+var d=document.createElement('div');
+d.className='btq-dot'+(i===cur?' active':(ans[i]!==null?' done':''));
+w.appendChild(d);
+});
 }
 
 function select(v){
-  ans[cur]=v;
-  document.querySelectorAll('.btq-opt').forEach(function(b){
-    var l=b.querySelector('.btq-letter').textContent;
-    var o=qs[cur].opts.find(function(x){return x.l===l;});
-    if(o&&o.v===v)b.classList.add('selected');else b.classList.remove('selected');
-  });
-  document.getElementById('btq-next').disabled=false;
-  renderDots();
+ans[cur]=v;
+document.querySelectorAll('.btq-opt').forEach(function(b){
+var l=b.querySelector('.btq-letter').textContent;
+var o=qs[cur].opts.find(function(x){return x.l===l;});
+if(o&&o.v===v)b.classList.add('selected');else b.classList.remove('selected');
+});
+document.getElementById('btq-next').disabled=false;
+renderDots();
 }
 
 window.btqNext=function(){
-  if(ans[cur]===null)return;
-  if(cur<qs.length-1){cur++;render();}else showResult();
+if(ans[cur]===null)return;
+if(cur<TOTAL-1){cur++;render();}else showResult();
 };
 window.btqBack=function(){if(cur>0){cur--;render();}};
 window.btqRetake=function(){
-  cur=0;ans=new Array(qs.length).fill(null);
-  document.getElementById('btq-result').style.display='none';
-  document.getElementById('btq-quiz').style.display='block';
-  render();
+cur=0;ans=new Array(TOTAL).fill(null);
+document.getElementById('btq-result').style.display='none';
+document.getElementById('btq-quiz').style.display='block';
+render();
 };
 
 function showResult(){
-  var c={};
-  ans.forEach(function(a){if(a)c[a]=(c[a]||0)+1;});
-  var winner;
-  if(c['MED']){winner='MED';}
-  else{winner=Object.keys(c).reduce(function(a,b){return(c[a]||0)>=(c[b]||0)?a:b;});}
-  var r=rs[winner];
-  document.getElementById('btq-quiz').style.display='none';
-  var rd=document.getElementById('btq-result');rd.style.display='block';
-  var badge=document.getElementById('btq-rbadge');
-  badge.style.background=r.bg;badge.style.color=r.color;badge.textContent=r.badge;
-  document.getElementById('btq-rtitle').textContent=r.title;
-  document.getElementById('btq-rdesc').textContent=r.desc;
-  var tw=document.getElementById('btq-rtraits');tw.innerHTML='';
-  r.traits.forEach(function(t){
-    var row=document.createElement('div');row.className='btq-trait';
-    row.innerHTML='<span class="btq-check">&#10003;</span><span>'+t+'</span>';
-    tw.appendChild(row);
-  });
-  document.getElementById('btq-rcta').innerHTML=r.cta;
+// Medical override: if any answer is MED, that result wins regardless of tally
+if(ans.indexOf('MED')!==-1){
+displayResult('MED');
+return;
+}
+// Tally remaining types
+var c={};
+ans.forEach(function(a){if(a){c[a]=(c[a]||0)+1;}});
+var winner=Object.keys(c).reduce(function(a,b){return c[a]>=c[b]?a:b;});
+displayResult(winner);
+}
+
+function displayResult(key){
+var r=rs[key];
+document.getElementById('btq-quiz').style.display='none';
+var rd=document.getElementById('btq-result');rd.style.display='block';
+var badge=document.getElementById('btq-rbadge');
+badge.style.background=r.bg;badge.style.color=r.color;badge.textContent=r.badge;
+document.getElementById('btq-rtitle').textContent=r.title;
+document.getElementById('btq-rdesc').textContent=r.desc;
+var tw=document.getElementById('btq-rtraits');tw.innerHTML='';
+r.traits.forEach(function(t){
+var row=document.createElement('div');row.className='btq-trait';
+row.innerHTML='<span class="btq-check">&#10003;</span><span>'+t+'</span>';
+tw.appendChild(row);
+});
+document.getElementById('btq-rcta').innerHTML=r.cta;
 }
 
 render();
 })();
 </script>
-{% endraw %}
-<!-- END BELLY TYPE QUIZ -->
-ENDOFFILE
-echo "Done"
+<!-- END BELLY TYPE QUIZ v2 -->
