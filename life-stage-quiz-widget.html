@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Life Stage Quiz</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:1.25rem;background:#fff;color:#1a1a1a;font-size:14px;}
+.lq-head h3{font-size:19px;font-weight:700;color:#1a1a1a;margin-bottom:8px;line-height:1.4;}
+.lq-head p{font-size:14px;color:#666;line-height:1.6;margin-bottom:1.5rem;}
+.lq-list{display:flex;flex-direction:column;gap:8px;margin-bottom:1.5rem;}
+.lq-item{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;border-radius:8px;border:1px solid #e5e5e5;background:#f8f8f8;cursor:pointer;transition:border-color .15s,background .15s;}
+.lq-item:hover{border-color:#bbb;}
+.lq-item.checked{border-color:#1a1a1a;background:#fff;}
+.lq-checkbox{width:18px;height:18px;border-radius:4px;border:1.5px solid #ccc;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;transition:background .15s,border-color .15s;}
+.lq-item.checked .lq-checkbox{background:#1a1a1a;border-color:#1a1a1a;}
+.lq-checkbox span{font-size:12px;color:#fff;opacity:0;line-height:1;}
+.lq-item.checked .lq-checkbox span{opacity:1;}
+.lq-label{font-size:14px;color:#1a1a1a;line-height:1.5;}
+.lq-submit{width:100%;display:flex;align-items:center;justify-content:center;gap:6px;padding:13px;border-radius:8px;background:#1a1a1a;color:#fff;font-size:15px;font-weight:600;cursor:pointer;border:none;font-family:inherit;transition:opacity .15s;}
+.lq-submit:hover{opacity:.88;}
+.lq-note{margin-top:10px;font-size:12px;color:#999;text-align:center;}
+</style>
+</head>
+<body>
+<div class="lq-head">
+<h3>What's actually going on? Take the 60-second life-stage quiz</h3>
+<p>Click everything that's true for you right now. No wrong answers — this just helps us point you to the right plan.</p>
+</div>
+<div class="lq-list" id="lq-list"></div>
+<button class="lq-submit" id="lq-submit-btn">See my stage & solution &#8594;</button>
+<p class="lq-note" id="lq-note"></p>
+<script>
+(function(){
+var items=[
+{t:"Irregular or absent periods that have been a long-term pattern, not a new change",c:"pcos"},
+{t:"Excess hair growth on face, chest, or back, or a thinning hairline",c:"pcos"},
+{t:"Stubborn belly fat that hasn't responded to diet or exercise for years",c:"pcos"},
+{t:"Diagnosed PCOS or polycystic ovaries",c:"pcos"},
+{t:"Frequent sugar cravings, energy crashes, or feeling \"hangry\" after meals",c:"pcos"},
+{t:"Gave birth within the last 1-2 years",c:"postpartum"},
+{t:"Currently breastfeeding",c:"postpartum"},
+{t:"Diastasis recti or noticeable core weakness since pregnancy",c:"postpartum"},
+{t:"Hair shedding that started a few months after delivery",c:"postpartum"},
+{t:"Pregnancy weight that hasn't shifted despite real effort",c:"postpartum"},
+{t:"Periods that have recently become irregular, heavier, lighter, or unpredictable (a new change)",c:"perimenopause"},
+{t:"Hot flashes or night sweats",c:"perimenopause"},
+{t:"New brain fog or trouble concentrating that wasn't there before",c:"perimenopause"},
+{t:"Trouble sleeping that isn't related to a baby",c:"perimenopause"},
+{t:"Mood swings, new anxiety, or irritability that feels different from before",c:"perimenopause"}
+];
+var checked={};
+function buildList(){
+var w=document.getElementById('lq-list');
+w.innerHTML='';
+items.forEach(function(it,i){
+var row=document.createElement('div');
+row.className='lq-item';
+row.innerHTML='<span class="lq-checkbox"><span>&#10003;</span></span><span class="lq-label">'+it.t+'</span>';
+row.onclick=function(){
+checked[i]=!checked[i];
+row.classList.toggle('checked',checked[i]);
+};
+w.appendChild(row);
+});
+}
+function computeAnchor(){
+var pcos=false,postpartum=false,peri=false;
+items.forEach(function(it,i){
+if(checked[i]){
+if(it.c==="pcos")pcos=true;
+if(it.c==="postpartum")postpartum=true;
+if(it.c==="perimenopause")peri=true;
+}
+});
+if(!pcos&&!postpartum&&!peri)return "nothing-just-40";
+if(pcos&&!postpartum&&!peri)return "pcos-only";
+if(!pcos&&postpartum&&!peri)return "postpartum-only";
+if(!pcos&&!postpartum&&peri)return "perimenopause-only";
+if(pcos&&postpartum&&!peri)return "pcos--postpartum";
+if(pcos&&!postpartum&&peri)return "pcos--perimenopause";
+if(!pcos&&postpartum&&peri)return "postpartum--perimenopause";
+return "pcos--perimenopause--postpartum";
+}
+document.getElementById('lq-submit-btn').addEventListener('click',function(){
+var anchor=computeAnchor();
+var note=document.getElementById('lq-note');
+try{
+var parentDoc=window.parent.document;
+var target=parentDoc.getElementById(anchor);
+if(target){
+window.parent.location.hash=anchor;
+target.scrollIntoView({behavior:"smooth",block:"start"});
+note.textContent="";
+}else{
+note.textContent="Result: #"+anchor+" (add this id to the matching section on your page)";
+}
+}catch(e){
+note.textContent="Result: #"+anchor;
+}
+});
+buildList();
+})();
+</script>
+</body>
+</html>
