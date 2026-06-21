@@ -58,7 +58,7 @@ For most women that's **30–40g of protein per meal** — closer to a chicken b
 
 Your training needs depend on what your hormones and body are actually doing right now — not your age on paper, and not just "perimenopause vs. not." PCOS, postpartum recovery, and perimenopause can show up alone or stacked on top of each other, and each combination needs a different plan.
 
-![dont-shrink-build-muscle](/assets/images/idont-shrink-build-muscle.webp)
+![dont-shrink-build-muscle](/assets/images/dont-shrink-build-muscle.webp)
 
 ### Perimenopause Only
 {: #perimenopause-only }
