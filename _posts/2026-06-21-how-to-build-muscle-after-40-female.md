@@ -123,7 +123,7 @@ Give your body more recovery than either phase alone would need:
 * Protein needs peak here, around 35g+ per meal, and consistent meal timing with low-GI carbs keeps blood sugar steady
 * Inositol, magnesium, and daily stress management aren't optional extras — they're core to managing this combination well
 
-![build-muscle-in-pcos+perimenopause](/assets/images/build-muscle-in-pcos+perimenopaue.webp)
+![build-muscle-in-pcos+perimenopause](/assets/images/build-muscle-in-pcos+perimenopause.webp)
 
 ### PCOS + Postpartum
 {: #pcos--postpartum }
