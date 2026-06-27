@@ -67,7 +67,7 @@ Your training needs depend on what your hormones and body are actually doing rig
 
 Your estrogen is falling, which means your muscles need heavier loads to respond the way they used to, so this isn't the season for endless cardio or feather-light dumbbells.
 
-* Aim for 2–3 full-body strength sessions a week using real weight (squats, deadlifts, rows)
+* Aim for [2–3 full-body strength sessions](https://fitwithamna.me/strength-training-for-perimenopause/) a week using real weight (squats, deadlifts, rows)
 * Keep cardio short and varied instead of long and steady
 * Prioritize 30–40g protein per meal
 * Magnesium and vitamin D3 are worth adding for sleep and bone support
