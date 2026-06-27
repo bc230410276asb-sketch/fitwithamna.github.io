@@ -95,7 +95,7 @@ Heavy hip hinges also place compressive load on the lumbar spine and hip, one of
 
 **Box squat** — Squat down to a chair or low box, pause, then stand; limits depth and dramatically reduces knee stress
 
-![box-squat](assets/images/box-squat.webp)
+![box-squat](/assets/images/box-squat.webp)
 
 **Wall sit (isometric)** — Hold a static squat against the wall; builds quad strength without joint movement at all
 
@@ -207,7 +207,7 @@ You do all of these every single day. You should train all of them every week.
 3. Lower your chest toward the floor — elbows track at 45 degrees, not flared out to the sides
 4. Push the floor away from you on the way up — full arm extension, stopping just before elbows lock
 
-![pushup-for-perimenopause](assets/images/push-up-for-perimenopause.webp)
+![pushup-for-perimenopause](/assets/images/push-up-for-perimenopause.webp)
 
 
 **What you should feel:** Your chest engaging at the bottom of the press. Shoulders and triceps supporting at the top. If only your triceps are working, the weight is too heavy — drop it and focus on feeling the chest.
@@ -219,15 +219,15 @@ Progressive pressing movements train the chest, anterior deltoids, and triceps, 
 **Alternatives:**
 **Incline push-up (hands on counter or wall)** — Reduces bodyweight load significantly; a real starting point for beginners, not a cop-out
 
-![incline-push-up](assets/images/incline-push-up.webp)
+![incline-push-up](/assets/images/incline-push-up.webp)
 
 **Dumbbell floor press** — Identical to bench press but on the floor; limits range of motion, protects shoulders for anyone with joint sensitivity
 
-![dumbbell-floor-press](assets/images/dumbbell-floor-press.webp)
+![dumbbell-floor-press](/assets/images/dumbbell-floor-press.webp)
 
 **Resistance band chest press** — Anchor a band behind you at chest height, press forward; smooth constant tension with no joint compression at all
 
-![resistance-band-chest-press](assets/images/resistance-band-chest-press.webp)
+![resistance-band-chest-press](/assets/images/resistance-band-chest-press.webp)
 
 **The overhead press — why include it:**
 
@@ -246,7 +246,7 @@ This gets no attention in most perimenopause fitness content. It deserves to be 
 4. Keep your ribcage stacked over your hips — do not lean to either side
 5. Breathe normally throughout. Never hold your breath under a carry
 
-![the-farmer-carry-for-perimenopause](assets/images/the-farmer-carry-for-perimenopause.webp)
+![the-farmer-carry-for-perimenopause](/assets/images/the-farmer-carry-for-perimenopause.webp)
 
 **What you should feel:** Forearms working hard, core bracing to stay upright, upper back preventing your shoulders from rounding forward. If you're wobbling or leaning, the weight is too heavy.
 
@@ -255,11 +255,11 @@ This gets no attention in most perimenopause fitness content. It deserves to be 
 **Alternatives:**
 **Suitcase carry (one side only)** — Hold weight on one side only; forces your core to work much harder to keep your spine level; excellent for obliques and hip stability
 
-![suit-case-carry](assets/images/suit-case-carry.webp)
+![suit-case-carry](/assets/images/suit-case-carry.webp)
 
 **Goblet carry** — Hold a single heavy dumbbell at chest level and walk; increases core demand while reducing grip demand; great entry point
 
-![goblet-carry](assets/images/goblet-carry.webp)
+![goblet-carry](/assets/images/goblet-carry.webp)
 
 ---
 
@@ -322,7 +322,7 @@ You don't need a gym. You need dumbbells — or even bodyweight to start — and
 - Side-lying clam (pelvic floor and hip stability): 3 × 15 per side
 - Dead bug: 3 × 8 per side
 
-![day-1-lower-body+core-training-for-perimenopause](assets/images/day-1-lower-body+core-training-for-perimenopause.webp)
+![day-1-lower-body+core-training-for-perimenopause](/assets/images/day-1-lower-body+core-training-for-perimenopause.webp)
 
 ### Day 2 — Upper Body + Pulling
 - Dumbbell bent-over row: 3 × 8–12
@@ -331,7 +331,7 @@ You don't need a gym. You need dumbbells — or even bodyweight to start — and
 - Band pull-apart or lat pulldown: 3 × 10–12
 - Farmer carry: 3 rounds × 30 seconds
 
-![day-2-upper-body+pulling-for-perimenopause](assets/images/day-2-upper-body+pulling-for-perimenopause.webp)
+![day-2-upper-body+pulling-for-perimenopause](/assets/images/day-2-upper-body+pulling-for-perimenopause.webp)
 
 ### Day 3 — Full Body + Power
 - Loaded step-up: 3 × 8 per leg
@@ -340,7 +340,7 @@ You don't need a gym. You need dumbbells — or even bodyweight to start — and
 - Reverse lunge: 3 × 8 per leg
 - Jump squat or brisk stair climbing: 2 × 10 reps (if joints allow)
 
-![day-3-full-body+power-for-perimenopause](assets/images/day-3-full-body+power-for-perimenopause.webp)
+![day-3-full-body+power-for-perimenopause](/assets/images/day-3-full-body+power-for-perimenopause.webp)
 
 
 The power component on Day 3 isn't optional decoration. Bone responds best to both resistance and impact loading. If jump squats aren't right for your knees, brisk stair climbing or high-knee marching accomplishes the same bone stimulus with far less joint shear. Either works.
