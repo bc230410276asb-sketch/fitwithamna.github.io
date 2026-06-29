@@ -47,7 +47,7 @@ If you can pinch your lower belly and feel a soft, even layer between your finge
 
 ![big-pooch-belly](/assets/images/big-pooch-belly.webp)
 
-If your fingers feel together while pinching, then it is a combination of loose skin and subcutaneous fat. This type occurs after a lot of weight loss.
+If your fingers feel together while pinching, then it is a combination of [loose skin and subcutaneous fat](https://fitwithamna.me/how-to-lose-saggy-belly-post-weightloss/). This type occurs after a lot of weight loss.
 
 ![saggy-belly-pooch](/assets/images/saggy-belly-pooch.webp)
 
