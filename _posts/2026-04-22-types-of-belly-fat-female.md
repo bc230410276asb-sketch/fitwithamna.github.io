@@ -43,7 +43,7 @@ Let's break down which type you have!
 
 ## Why is your lower belly "soft" and "pinchable"?
 
-If you can pinch your lower belly and feel a soft, even layer between your fingers, and stay the same throughout, that's [subcutaneous fat](https://fitwithamna.me/how-to-get-rid-of-female-subcutaneous-fat/). If it is not saggy, it is acceptable and normal, but if it is really big, it needs attention and care.
+If you can pinch your lower belly and feel a soft, even layer between your fingers, and stay the same throughout, that's [subcutaneous fat](https://fitwithamna.me/how-to-get-rid-of-female-subcutaneous-fat/). 
 
 ![big-pooch-belly](/assets/images/big-pooch-belly.webp)
 
