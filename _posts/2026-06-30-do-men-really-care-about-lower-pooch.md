@@ -1,4 +1,3 @@
-
 ---
 layout: post
 Title: Is Your Lower Belly Pooch Affecting your Mental Health?
@@ -8,6 +7,7 @@ Excerpt: Is your lower belly pooch actually a problem? Solve the quiz — and th
 redirect_from: 
 - /is-your-lower-belly-pooch-normal-absolutely-yes/
 ---
+
 ![same-woman-different-mindset-lower-pooch-article](/assets/images/same-woman-different-mindset-lower-pooch-article.webp)
 
 ## Key Takeaways
