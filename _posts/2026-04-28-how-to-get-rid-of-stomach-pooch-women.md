@@ -185,37 +185,7 @@ No [drink burns belly fat](https://fitwithamna.me/what-drinks-burn-belly-fat-in-
 *Drinks that burn belly fat fast*
 
 ---
-
-## [Two Types of Belly Fat](https://fitwithamna.me/types-of-belly-fat-female/): What You Are Actually Dealing With
-
-Before you can fix the problem, you need to know which type of belly fat you are dealing with — or whether it is fat at all. This table breaks it down:
-
-| Feature | Visceral Fat | Subcutaneous Fat |
-|---|---|---|
-| Location | Deep inside abdomen, packed around your organs | Just under the skin — the soft, pinchable layer at your lower belly, hips, thighs |
-| Feel | Firm belly; looks like bloat from the inside out | Soft and squeezable — this is your visible pooch |
-| Health Risk | HIGH — strongly linked to heart disease, T2 diabetes, metabolic syndrome | MODERATE — less dangerous but still significant when excess accumulates over time |
-| Main Causes | Chronic stress (cortisol), sedentary lifestyle, poor sleep, high-sugar diet | Hormonal changes (estrogen decline), genetics, caloric surplus, post-pregnancy changes |
-
-*Source: Harvard T.H. Chan School of Public Health*
-
-**Quick self-check:** Pinch your lower belly. If it's soft and squeezable, you're likely dealing with subcutaneous fat. If the area feels hard or the protrusion doesn't move when you press on it, it may be bloat, organ positioning, or a structural issue — not fat. This distinction changes your entire strategy.
-
----
-
-## Is Lower Belly Pooch a Health Problem?
-
-The short answer: subcutaneous fat — the kind making up most visible pooches — carries moderate health risk, while visceral fat (the deeper kind) is the more metabolically dangerous variety. But moderate does not mean harmless, and the two types often coexist.
-
-Subcutaneous fat in the lower abdomen is also not metabolically inert. Research shows it secretes inflammatory signaling molecules — including leptin and resistin — that can contribute to insulin resistance over time, particularly in postmenopausal women. The [WHO](https://www.who.int/publications/i/item/9789241501491) classifies a waist-to-hip ratio above 0.85 in women as a marker of abdominal obesity that warrants medical attention.
-
-For women whose pooch is firmness-related, structural, or driven by gut issues — as is common in the threads above — the health picture is different. Persistent gut inflammation, SIBO, IBS, ovarian cysts, and pelvic floor dysfunction all warrant medical evaluation rather than more aggressive dieting.
-
----
-
-![health-risk-for-a-lower-belly-pooch](/assets/images/health-risk-for-a-lower-belly-pooch.webp)
-*Above 88 cm, your waistline—not your weight—signals higher health risk.*
----
+Before you can fix the problem, you need to know which [type of belly fat](https://fitwithamna.me/types-of-belly-fat-female/) you are dealing with — or whether it is fat at all.
 
 
 ## Conclusion
