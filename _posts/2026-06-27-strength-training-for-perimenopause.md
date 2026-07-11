@@ -281,17 +281,7 @@ That starting point is **2 days a week, at home, with dumbbells.**
 
 ---
 
-## What Perimenopause Is Actually Doing to Your Muscles
-
-Most conversations about perimenopause stop at hot flashes and mood swings. But underneath those is something less visible — and far more important for your long-term strength.
-
-Women lose muscle mass as they age. But here's the part that almost never gets explained: **women lose muscle power twice as fast as muscle mass.**
-
-That's not the same thing. Power is what you need to catch yourself from a stumble, push through a revolving door without hesitating, or sprint across a parking lot in the rain.
-
-The frustrating part? Traditional "toning" workouts — light weights, high reps, barre cardio fusion — do not fix myosin dysfunction. At all.
-
-### Can Strength Training Actually Change How Perimenopause Feels Day to Day?
+## Can Strength Training Actually Change How Perimenopause Feels Day to Day?
 
 Yes — and the evidence goes far beyond just body composition.
 
@@ -303,7 +293,7 @@ Forget just tracking your waistline. Lifting heavy is a scientifically backed, n
 >
 > Sharon didn't expect the mood shift to arrive first. Most women don't.
 
-### The Cardio Trap That Stopped Working
+## The Cardio Trap That Stopped Working
 
 Tired of this jargon? Walk more. Cycle more. Run more. Burn more.
 
