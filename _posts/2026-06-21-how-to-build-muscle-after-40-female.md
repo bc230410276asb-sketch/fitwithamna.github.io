@@ -70,7 +70,7 @@ Your estrogen is falling, which means your muscles need heavier loads to respond
 * Aim for [2–3 full-body strength sessions](https://fitwithamna.me/strength-training-for-perimenopause/) a week using real weight (squats, deadlifts, rows)
 * Keep cardio short and varied instead of long and steady
 * Prioritize [30–40g protein per meal](https://fitwithamna.me/best-protein-sources-for-perimenopause/)
-* Magnesium and vitamin D3 are worth adding for sleep and bone support
+* [Magnesium and vitamin D3](https://fitwithamna.me/best-multivitamin-for-perimenopause/) are worth adding for sleep and bone support
 * Protecting 7–8 hours of sleep matters as much as the workouts themselves
 
 ![build-muscle-in-perimenopause](/assets/images/build-muscle-in-perimenopause.webp)
