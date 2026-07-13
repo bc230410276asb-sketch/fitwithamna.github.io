@@ -80,7 +80,7 @@ Your estrogen is falling, which means your muscles need heavier loads to respond
 
 **You're managing PCOS** — irregular cycles, stubborn belly fat, or blood sugar swings that have been a pattern for years. The real lever here is insulin, not willpower.
 
-* Resistance training 3–4x a week (moderate-heavy, compound lifts) plus a little HIIT helps your muscles soak up blood sugar more efficiently, while regular meals built around low-GI carbs keep insulin steady
+* [Resistance training 3–4x a week](https://fitwithamna.me/workout-tips-for-women-over-40-with-pcos/) (moderate-heavy, compound lifts) plus a little HIIT helps your muscles soak up blood sugar more efficiently, while regular meals built around low-GI carbs keep insulin steady
 * Protein at every meal (about 30g) and consistent meal timing matter more than cutting calories — under-eating tends to backfire on PCOS
 * Inositol and magnesium are the two supplements with the most research behind them here, alongside daily stress management, since cortisol and insulin are closely linked
 
