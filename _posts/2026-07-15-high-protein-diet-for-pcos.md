@@ -104,6 +104,8 @@ One of the few plant proteins that's genuinely a complete protein on its own (it
 - **Combinations:** Edamame + quinoa + sesame dressing + shredded cabbage makes a cold lunch bowl that holds up well made ahead.
 - **Best time:** Snack slot (whole pods) or lunch (shelled, mixed into a bowl) — it's genuinely one of the lowest-effort options on this list.
 
+![edamame-for-pcos](/assets/images/edamame-for-pcos.webp)
+
 ### Pea or Soy-Based Protein Powder — one scoop typically 20–25g
 
 Pea protein in particular is one of the more complete plant powders on the market and blends smoothly, though it can have a slightly chalky texture on its own — blending with frozen banana or a nut butter smooths this out.
@@ -111,6 +113,8 @@ Pea protein in particular is one of the more complete plant powders on the marke
 - **How to eat it:** Blended into a smoothie with frozen fruit, spinach, and a plant milk; stirred into oatmeal after cooking.
 - **Combinations:** Pea protein + frozen mango + coconut milk + a handful of spinach (the flavor masks the green completely) is a genuinely five-minute vegan breakfast at full protein target.
 - **Best time:** Whenever convenience matters most — typically breakfast, given how fast it comes together compared to cooking a full meal.
+
+![pea-and-soy-based-protein-powder-for-pcos](/assets/images/pea-and-soy-based-protein-powder-for-pcos.webp)
 
 ---
 
