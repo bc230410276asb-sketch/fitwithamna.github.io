@@ -89,7 +89,7 @@ Your estrogen is falling, which means your muscles need heavier loads to respond
 ### Postpartum Only
 {: #postpartum-only }
 
-**You're postpartum** — recovering from a recent pregnancy, with no perimenopause symptoms yet.
+**You're [postpartum](https://fitwithamna.me/how-to-lose-postpartum-belly-after-c-section-at-home/)** — recovering from a recent pregnancy, with no perimenopause symptoms yet.
 
 Your body is still recalibrating from childbirth, and the priority right now is rebuilding from the inside out, not bouncing back fast. You just gave birth to a human!
 
