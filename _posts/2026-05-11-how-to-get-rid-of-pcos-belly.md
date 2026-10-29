@@ -110,20 +110,22 @@ For PCOS, the goal is blood sugar stability. Here's what actually works:
 
 ### Best Fruits for PCOS
 
-Not all fruit is created equal for PCOS. Go for low-GI options like berries, cherries, apples, pears, and citrus — fruits that release sugar slowly and won't spike your insulin.
+Not all fruit is created equal for PCOS. Go for low-GI options like berries, cherries, apples, pears, and citrus — fruits that release sugar slowly and won't spike your insulin. If you enjoy blended fruit, these [PCOS-friendly smoothie recipes](https://fitwithamna.me/pcos-belly-fat-smoothies) offer ideas for combining fruit with protein, healthy fats, and fiber.
 ![best-fruits-for-pcos-and-worst-foods-for-pcos](/assets/images/best-fruits-for-pcos-and-worst-foods-for-pcos.webp)
 
 
 ### Best Breakfast, Dinner, and Snacks for PCOS
 
-Focus on protein-forward breakfasts (eggs, Greek yogurt, nuts), balanced dinners with lean protein and non-starchy vegetables, and snacks like hummus with veggies, a small handful of nuts, or a boiled egg.
+Focus on [high protein diet for PCOS](https://fitwithamna.me/high-protein-diet-for-pcos/) including protein-forward breakfasts (eggs, Greek yogurt, nuts), balanced dinners with lean protein and non-starchy vegetables, and snacks like hummus with veggies, a small handful of nuts, or a boiled egg.
 
 ![best-diet-for-pcos](/assets/images/best-diet-for-pcos.webp)
 
 
 ---
 
-Pairing your PCOS diet with the right kind of movement can significantly accelerate results. If you want to build a routine that works alongside your nutrition, the specific [pcos belly fat exercises](https://fitwithamna.me/best-exercises-for-pcos-belly-fat-for-beginners/) are a solid place to start.
+Pairing your PCOS diet with the right kind of movement can significantly accelerate results. If you want to build a routine that works alongside your nutrition, the specific [pcos belly fat exercises](https://fitwithamna.me/best-exercises-for-pcos-belly-fat-for-beginners/) are a solid place to start. Women over 40 who are new to exercise can also explore these [beginner workout tips for women over 40 with PCOS](https://fitwithamna.me/workout-tips-for-women-over-40-with-pcos/) for practical ways to build a consistent routine. 
+
+If you prefer a gentler approach to movement, explore these [beginner yoga poses for PCOS belly fat and weight loss](https://fitwithamna.me/yoga-for-pcos-belly-fat-and-weightloss-for-beginners/) to find a routine that fits your current fitness level. Another low-impact option is [beginner Pilates for PCOS belly fat and weight loss](https://fitwithamna.me/best-pilates-for-pcos-belly-fat-and-weightloss-for-beginners/), which can help you build core strength and develop a consistent exercise routine.
 
 ![6-7k-steps-daily-for-pcos](/assets/images/6-7k-steps-daily-for-pcos.webp)
 
@@ -135,6 +137,8 @@ Pairing your PCOS diet with the right kind of movement can significantly acceler
 PCOS belly is real, it's specific, and it responds to a very specific set of interventions. This isn't about eating less and moving more — that approach misses the entire hormonal picture.
 
 I want to be honest with you: some women also need medical support. Metformin, inositol supplementation, or hormonal therapy can all be part of the picture, and there's no shame in that. If you've been doing everything "right" for months and nothing is shifting, please talk to an endocrinologist, not just a general practitioner. You deserve a doctor who takes this seriously.
+
+If you're considering supplements as part of your routine, this guide to [supplements for PCOS hormone balance](https://fitwithamna.me/supplements-for-pcos-hormone-balance/) explains the available options and why it's important to consider the evidence before adding anything new.
 
 You are not failing. You are fighting a hormonal condition with incomplete information. Now you have a little more. Go use it.
 
