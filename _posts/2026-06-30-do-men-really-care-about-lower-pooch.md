@@ -20,7 +20,7 @@ redirect_from:
 
 Welcome, gorgeous. If you've landed here because you looked down, noticed a soft little curve at the bottom of your belly, and immediately catastrophised — first of all, you are in very good company. And second: *we need to talk.*
 
-Amna Shahid here. Yeah, I am a fitness content writer, but I am a woman first. I understand women and want to talk to you in the best way possible, in every article I share. I was overweight since I was a child and today I am a 23 year old woman with my dream body and mindset.
+Amna Shahid here. Yeah, I am a [fitness content writer](https://fitwithamna.me/about/), but I am a woman first. I understand women and want to talk to you in the best way possible, in every article I share. I was overweight since I was a child and today I am a 23 year old woman with my dream body and mindset.
 
 My journey wasn't straight and easy. I want to tribute my parents for all the support, financially and mentally. Thanks!
 
@@ -38,6 +38,8 @@ Today, we're asking the real questions: **Why do you even have it? Is it actuall
 
 [Dr. Lisa Erlanger](https://www.drlisaerlanger.com/about), clinical professor of family medicine at the University of Washington School of Medicine, put it plainly: *"People without uteruses have tummy pooches, too, and the back of my arm has fat, and there's no uterus there."*
 
+If you're unsure whether your lower belly is normal fat, bloating, or another type of abdominal change, this [guide to the different types of belly fat in women](https://fitwithamna.me/types-of-belly-fat-female/) can help you understand the differences.
+
 ---
 
 ## Does the lower belly pooch make a woman less attractive? 
@@ -51,6 +53,8 @@ The short answer is: attractiveness is not a one-variable equation, and the bell
 A [2013 study in *PLOS ONE*](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0105468) analysed what heterosexual men found most attractive in women's bodies and found that waist-to-hip ratio was a more significant factor than flat stomachs or low body fat specifically — and notably, a *soft lower belly does not change waist-to-hip ratio.*
 
 More importantly: a 2019 study published in [*Body Image*](https://pmc.ncbi.nlm.nih.gov/articles/PMC6428027/) found that women's own perception of their attractiveness was significantly lower than observers' actual ratings — meaning we are systematically, reliably, and measurably too hard on ourselves.
+
+If you want to understand what influences your lower belly's appearance and which changes may realistically help, read this [guide to reducing a stomach pooch in women](https://fitwithamna.me/how-to-get-rid-of-stomach-pooch-women/).
 
 > ⭐ **REAL TALK:** When a man on Facebook went viral in early 2024 claiming "all men hate the belly pooch," he was immediately dismantled by — you guessed it — other men. "We never authorized this clown to speak on our behalf," one replied. The post became a masterclass in how male preferences are far more diverse, and far less critical, than the internet would have you believe.
 
@@ -82,11 +86,11 @@ The real question isn't how to get rid of your lower belly pooch. It's why we we
 
 ### Is a lower belly pooch normal for women?
 
-Yes, completely. The lower belly pooch is normal for the majority of women due to estrogen-driven fat distribution, pelvic anatomy, and the natural shape of the female torso. It is not a sign of poor health, poor diet, or poor fitness. Even very lean, athletic women often have a soft lower belly because of skeletal structure and hormonal fat patterning.
+Yes, completely. The [lower belly pooch](https://fitwithamna.me/how-to-get-rid-of-stomach-pooch-women/) is normal for the majority of women due to estrogen-driven fat distribution, pelvic anatomy, and the natural shape of the female torso. It is not a sign of poor health, poor diet, or poor fitness. Even very lean, athletic women often have a soft lower belly because of skeletal structure and [hormonal fat](https://fitwithamna.me/how-to-get-rid-of-hormonal-belly-fat-in-women/) patterning.
 
 ### Why do you have a pooch on your lower stomach even though you are not overweight?
 
-Several factors cause a lower belly pooch independent of weight: your pelvic tilt (anatomical), estrogen directing subcutaneous fat to the lower abdomen, bloating from your menstrual cycle, diastasis recti from pregnancy, or a C-section scar. None of these are problems that need fixing.
+Several factors cause a lower belly pooch independent of weight: your pelvic tilt (anatomical), estrogen directing [subcutaneous fat](https://fitwithamna.me/what-causes-subcutaneous-fat/) to the lower abdomen, bloating from your menstrual cycle, diastasis recti from pregnancy, [loose skin post weightloss](https://fitwithamna.me/how-to-lose-saggy-belly-post-weightloss/), or a [C-section scar](https://fitwithamna.me/how-to-lose-postpartum-belly-after-c-section-at-home/). None of these are problems that need fixing.
 
 ### Is the lower belly pooch actually the uterus?
 
