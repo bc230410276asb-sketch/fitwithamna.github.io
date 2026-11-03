@@ -6,8 +6,6 @@ Category: Supplements & Nutrition
 Excerpt: Normal magnesium blood test but still experiencing fatigue, muscle twitching or poor sleep? Learn why serum tests can miss low magnesium and what to ask your doctor.
 ---
 
-# Why Am I Testing Normal for Magnesium but Have Deficiency Symptoms?
-
 ![normal-magnesium-but-deficiency-symptoms](/assets/images/normal-magnesium-but-deficiency-symptoms.webp)
 
 **About the author:** I'm Amna, a women's health and wellness writer and the creator of Fit with Amna. I turn research into plain-English guides so you can walk into your next appointment prepared. [Read more about me](https://fitwithamna.me/about/). *This article is general information, not medical advice.*
@@ -24,11 +22,11 @@ Picture this: your lab portal says "all values within range," yet your eyelid ha
 
 ## The Perfect Lab Work Paradox
 
-A normal serum magnesium result can sit alongside low tissue magnesium because blood holds under 1% of your body's supply. Bone stores 50% to 60% and soft tissue holds most of the rest, according to the NIH Office of Dietary Supplements.
+A normal serum magnesium result can sit alongside low tissue magnesium because blood holds under 1% of your body's supply. Bone stores 50% to 60% and soft tissue holds most of the rest, according to the [NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/).
 
-Your kidneys help keep that blood number steady by cutting magnesium losses in urine when your status is low (NIH).
+Your kidneys help keep that blood number steady by cutting magnesium losses in urine when your status is low [NIH](https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/).
 
-"Normal" is also a wide window. The NIH lists 0.75 to 0.95 mmol/L as normal, and a 2018 *Nutrients* review advises extra testing for anyone between 0.75 and 0.85 mmol/L (Razzaque, 2018). So a result labelled "normal" may be sitting at the bottom edge of the range.
+"Normal" is also a wide window. The NIH lists 0.75 to 0.95 mmol/L as normal, and a 2018 *Nutrients* review advises extra testing for anyone between 0.75 and 0.85 mmol/L [Razzaque, 2018](https://www.mdpi.com/2072-6643/10/12/1863/htm). So a result labelled "normal" may be sitting at the bottom edge of the range.
 
 ## The Anatomy of the "Night Jolt" (Symptoms Beyond the Muscle Cramp)
 
@@ -44,9 +42,9 @@ These symptoms are nonspecific and often confounded by low intake of other nutri
 
 ## The Vitamin D Trap: How Fixing One Deficiency Can Expose Another
 
-Your body needs magnesium to activate vitamin D, so low magnesium can leave a vitamin D supplement underperforming. A 2018 review in the *Journal of the American Osteopathic Association* found that all the enzymes that metabolize vitamin D seem to require magnesium (Uwitonze & Razzaque, 2018).
+Your body needs magnesium to activate vitamin D, so low magnesium can leave a vitamin D supplement underperforming. A 2018 review in the *Journal of the American Osteopathic Association* found that all the enzymes that metabolize vitamin D seem to require magnesium [Uwitonze & Razzaque, 2018](https://jom.osteopathic.org/abstract/role-of-magnesium-in-vitamin-d-activation-and-function/).
 
-Vitamin D supplements can also raise calcium and phosphate levels even while a person stays vitamin D deficient (ScienceDaily summary).
+Vitamin D supplements can also raise calcium and phosphate levels even while a person stays vitamin D deficient [ScienceDaily summary](https://www.sciencedaily.com/releases/2018/02/180226122548.htm).
 
 Vitamin D causing magnesium deficiency is a popular claim online, but I couldn't find proof that vitamin D supplements drain magnesium. What is documented is the reverse dependency: low magnesium can stall vitamin D.
 
@@ -69,7 +67,7 @@ The magnesium glycinate anxiety paradox, feeling wired instead of calm, shows up
 
 > **Fact:** A Supplement Facts panel lists elemental magnesium, not the weight of the whole compound (NIH). Compare that number, not the compound weight on the front of the bottle.
 
-If you've confirmed a deficiency and you're buying in Pakistan, this guide to the best magnesium glycinate in pakistan walks you through what to look for before you spend.
+If you've confirmed a deficiency and you're buying in Pakistan, this guide to the [best magnesium glycinate in pakistan](https://fitwithamna.me/best-magnesium-glycinate-in-pakistan/) walks you through what to look for before you spend.
 
 ## Rewriting the Blueprint: How to Advocate for Yourself
 
@@ -107,4 +105,4 @@ The NIH sets the upper limit for supplemental magnesium at 350 mg a day for adul
 
 ### What other tests can check magnesium besides serum and RBC?
 
-Other options include ionized magnesium in blood, saliva and urine tests, and a magnesium-loading (tolerance) test. The NIH notes that no single method is considered satisfactory, so a clinical assessment may be needed alongside labs (NIH). A 2018 review also calls the lack of a standardized test one of the field's most vexing problems (Workinger et al., 2018).
+Other options include ionized magnesium in blood, saliva and urine tests, and a magnesium-loading (tolerance) test. The NIH notes that no single method is considered satisfactory, so a clinical assessment may be needed alongside labs (NIH). A 2018 review also calls the lack of a standardized test one of the field's most vexing problems [Workinger et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30200431/).
